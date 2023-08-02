@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deliveries",
+  "info": {
+    "singularName": "delivery",
+    "pluralName": "deliveries",
+    "displayName": "location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

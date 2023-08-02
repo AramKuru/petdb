@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ],
+      "required": true
+    },
+    "lattitude": {
+      "type": "float",
+      "required": true
+    },
+    "langtitude": {
+      "type": "float",
+      "required": true
+    },
+    "pic": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "desc": {
+      "type": "text"
+    },
+    "desc_sorani": {
+      "type": "text"
+    },
+    "desc_badini": {
+      "type": "text"
+    },
+    "desc_arabic": {
+      "type": "text"
+    },
+    "desc_turkish": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal",
+      "max": 5,
+      "min": 1
+    }
+  }
+}

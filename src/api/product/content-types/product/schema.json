@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "discount": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::discount.discount",
+      "inversedBy": "products"
+    },
+    "filter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::filter.filter"
+    },
+    "name_sorani": {
+      "type": "string",
+      "required": false,
+      "default": "name_turkish"
+    },
+    "name_arabic": {
+      "type": "string",
+      "required": false
+    },
+    "name_badini": {
+      "type": "string"
+    },
+    "name_turkish": {
+      "type": "string"
+    },
+    "disc": {
+      "type": "text"
+    },
+    "disc_sorani": {
+      "type": "text"
+    },
+    "disc_badini": {
+      "type": "text"
+    },
+    "disc_arabic": {
+      "type": "text"
+    },
+    "disc_turkish": {
+      "type": "text"
+    },
+    "stock": {
+      "type": "float",
+      "required": true
+    },
+    "is_offer": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "capacity": {
+      "type": "string",
+      "required": false
+    },
+    "package_count": {
+      "type": "float"
+    },
+    "pic": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "animals": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::animal.animal",
+      "inversedBy": "products"
+    }
+  }
+}

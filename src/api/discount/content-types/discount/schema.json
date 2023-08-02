@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounts",
+  "info": {
+    "singularName": "discount",
+    "pluralName": "discounts",
+    "displayName": "discount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "percent": {
+      "type": "integer",
+      "required": true,
+      "max": 100,
+      "min": 0
+    },
+    "valid_until": {
+      "type": "datetime",
+      "required": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "discount"
+    }
+  }
+}

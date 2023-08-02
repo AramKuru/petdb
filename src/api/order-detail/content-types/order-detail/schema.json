@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_details",
+  "info": {
+    "singularName": "order-detail",
+    "pluralName": "order-details",
+    "displayName": "order_detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "order_details"
+    },
+    "shipping_address": {
+      "type": "string",
+      "required": true
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Confirmed",
+        "On_Way",
+        "Preparing",
+        "Queue",
+        "Cancelled"
+      ],
+      "required": true,
+      "default": "Queue"
+    }
+  }
+}

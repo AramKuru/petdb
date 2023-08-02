@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shippings",
+  "info": {
+    "singularName": "shipping",
+    "pluralName": "shippings",
+    "displayName": "Shipping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-detail.order-detail"
+    },
+    "deliveryboy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::deliveryboy.deliveryboy"
+    },
+    "ship_charge": {
+      "type": "float",
+      "required": true
+    }
+  }
+}
