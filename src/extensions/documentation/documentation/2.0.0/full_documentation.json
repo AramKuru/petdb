@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "title": "DOCUMENTATION",
     "description": "",
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-14T21:36:07.171Z"
+    "x-generation-date": "2023-08-14T21:22:03.634Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25,8 +25,8 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1337/api",
-      "description": "Development server"
+      "url": "https://coral-app-xi63b.ondigitalocean.app/api",
+      "description": "d server"
     }
   ],
   "externalDocs": {
