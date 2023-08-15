@@ -14,7 +14,8 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "category": {
       "type": "relation",
@@ -35,48 +36,61 @@
     "name_sorani": {
       "type": "string",
       "required": false,
-      "default": "name_turkish"
+      "default": "name_turkish",
+      "pluginOptions": {}
     },
     "name_arabic": {
       "type": "string",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "name_badini": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "name_turkish": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "disc": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "disc_sorani": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "disc_badini": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "disc_arabic": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "disc_turkish": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {}
     },
     "stock": {
       "type": "float",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "is_offer": {
       "type": "boolean",
       "default": false,
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "capacity": {
       "type": "string",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "package_count": {
-      "type": "float"
+      "type": "float",
+      "pluginOptions": {}
     },
     "pic": {
       "type": "media",
@@ -84,7 +98,8 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {}
     },
     "animals": {
       "type": "relation",
