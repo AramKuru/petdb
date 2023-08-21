@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-15T17:09:01.243Z"
+    "x-generation-date": "2023-08-21T09:46:35.159Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1745,6 +1745,10 @@
                               }
                             }
                           }
+                        },
+                        "Price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
@@ -3587,6 +3591,10 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "Price": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -7821,6 +7829,10 @@
                             }
                           }
                         },
+                        "Price": {
+                          "type": "number",
+                          "format": "float"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -11310,6 +11322,10 @@
                                                       }
                                                     }
                                                   },
+                                                  "Price": {
+                                                    "type": "number",
+                                                    "format": "float"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -13569,6 +13585,10 @@
                           }
                         }
                       },
+                      "Price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -13700,7 +13720,8 @@
             "required": [
               "name",
               "stock",
-              "is_offer"
+              "is_offer",
+              "Price"
             ],
             "type": "object",
             "properties": {
@@ -13808,6 +13829,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Price": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -13864,7 +13889,8 @@
         "required": [
           "name",
           "stock",
-          "is_offer"
+          "is_offer",
+          "Price"
         ],
         "properties": {
           "name": {
@@ -15246,6 +15272,10 @@
                                         }
                                       }
                                     },
+                                    "Price": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -15566,6 +15596,10 @@
                 }
               }
             }
+          },
+          "Price": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
@@ -17372,6 +17406,10 @@
                                                                     }
                                                                   }
                                                                 }
+                                                              },
+                                                              "Price": {
+                                                                "type": "number",
+                                                                "format": "float"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -19806,6 +19844,10 @@
                               }
                             }
                           }
+                        },
+                        "Price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",

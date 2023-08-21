@@ -106,6 +106,10 @@
       "relation": "manyToMany",
       "target": "api::animal.animal",
       "inversedBy": "products"
+    },
+    "Price": {
+      "type": "float",
+      "required": true
     }
   }
 }
