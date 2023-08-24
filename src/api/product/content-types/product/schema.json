@@ -107,7 +107,7 @@
       "target": "api::animal.animal",
       "inversedBy": "products"
     },
-    "Price": {
+    "price": {
       "type": "float",
       "required": true
     }

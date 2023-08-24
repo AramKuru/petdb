@@ -100,11 +100,20 @@
       "type": "float"
     },
     "admin_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
     }
   }
 }

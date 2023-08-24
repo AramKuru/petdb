@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-21T09:46:35.159Z"
+    "x-generation-date": "2023-08-24T14:40:59.469Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1746,7 +1746,7 @@
                             }
                           }
                         },
-                        "Price": {
+                        "price": {
                           "type": "number",
                           "format": "float"
                         },
@@ -3592,7 +3592,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "Price": {
+                                                  "price": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -4207,6 +4207,12 @@
                             }
                           }
                         }
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -7829,7 +7835,7 @@
                             }
                           }
                         },
-                        "Price": {
+                        "price": {
                           "type": "number",
                           "format": "float"
                         },
@@ -11322,7 +11328,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "Price": {
+                                                  "price": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -11937,6 +11943,12 @@
                             }
                           }
                         }
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -13585,7 +13597,7 @@
                           }
                         }
                       },
-                      "Price": {
+                      "price": {
                         "type": "number",
                         "format": "float"
                       },
@@ -13721,7 +13733,7 @@
               "name",
               "stock",
               "is_offer",
-              "Price"
+              "price"
             ],
             "type": "object",
             "properties": {
@@ -13830,7 +13842,7 @@
                   "example": "string or id"
                 }
               },
-              "Price": {
+              "price": {
                 "type": "number",
                 "format": "float"
               }
@@ -13890,7 +13902,7 @@
           "name",
           "stock",
           "is_offer",
-          "Price"
+          "price"
         ],
         "properties": {
           "name": {
@@ -15272,7 +15284,7 @@
                                         }
                                       }
                                     },
-                                    "Price": {
+                                    "price": {
                                       "type": "number",
                                       "format": "float"
                                     },
@@ -15597,7 +15609,7 @@
               }
             }
           },
-          "Price": {
+          "price": {
             "type": "number",
             "format": "float"
           },
@@ -17407,7 +17419,7 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "Price": {
+                                                              "price": {
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
@@ -17862,6 +17874,12 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "phoneNumber": {
+                                    "type": "string"
+                                  },
+                                  "fullName": {
+                                    "type": "string"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -19845,7 +19863,7 @@
                             }
                           }
                         },
-                        "Price": {
+                        "price": {
                           "type": "number",
                           "format": "float"
                         },
@@ -20700,6 +20718,12 @@
                             }
                           }
                         }
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
