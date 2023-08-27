@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-24T14:40:59.469Z"
+    "x-generation-date": "2023-08-27T00:16:49.645Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1286,6 +1286,9 @@
                                     },
                                     "priority": {
                                       "type": "integer"
+                                    },
+                                    "name": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -3132,6 +3135,9 @@
                                                               },
                                                               "priority": {
                                                                 "type": "integer"
+                                                              },
+                                                              "name": {
+                                                                "type": "string"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -7376,6 +7382,9 @@
                                     "priority": {
                                       "type": "integer"
                                     },
+                                    "name": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -8814,7 +8823,8 @@
             "required": [
               "pic",
               "active",
-              "priority"
+              "priority",
+              "name"
             ],
             "type": "object",
             "properties": {
@@ -8834,6 +8844,9 @@
               },
               "priority": {
                 "type": "integer"
+              },
+              "name": {
+                "type": "string"
               }
             }
           }
@@ -8890,7 +8903,8 @@
         "required": [
           "pic",
           "active",
-          "priority"
+          "priority",
+          "name"
         ],
         "properties": {
           "pic": {
@@ -9519,6 +9533,9 @@
           },
           "priority": {
             "type": "integer"
+          },
+          "name": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -10868,6 +10885,9 @@
                                                               },
                                                               "priority": {
                                                                 "type": "integer"
+                                                              },
+                                                              "name": {
+                                                                "type": "string"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -13138,6 +13158,9 @@
                                   "priority": {
                                     "type": "integer"
                                   },
+                                  "name": {
+                                    "type": "string"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -14824,6 +14847,9 @@
                                                 },
                                                 "priority": {
                                                   "type": "integer"
+                                                },
+                                                "name": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -16959,6 +16985,9 @@
                                                                           },
                                                                           "priority": {
                                                                             "type": "integer"
+                                                                          },
+                                                                          "name": {
+                                                                            "type": "string"
                                                                           },
                                                                           "createdAt": {
                                                                             "type": "string",
@@ -19403,6 +19432,9 @@
                                     },
                                     "priority": {
                                       "type": "integer"
+                                    },
+                                    "name": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
