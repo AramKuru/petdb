@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -22,15 +22,18 @@
       "type": "datetime",
       "required": true
     },
-    "is_active": {
-      "type": "boolean",
-      "required": true
-    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "discount"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "valid_from": {
+      "type": "datetime"
     }
   }
 }

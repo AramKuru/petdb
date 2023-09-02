@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-27T00:16:49.645Z"
+    "x-generation-date": "2023-09-02T00:32:49.042Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1055,9 +1055,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -1078,15 +1075,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -2904,9 +2904,6 @@
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
-                                                              "is_active": {
-                                                                "type": "boolean"
-                                                              },
                                                               "products": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -2927,15 +2924,18 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "Name": {
+                                                                "type": "string"
+                                                              },
+                                                              "valid_from": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -6331,7 +6331,7 @@
             "required": [
               "percent",
               "valid_until",
-              "is_active"
+              "Name"
             ],
             "type": "object",
             "properties": {
@@ -6341,9 +6341,6 @@
               "valid_until": {
                 "type": "string",
                 "format": "date-time"
-              },
-              "is_active": {
-                "type": "boolean"
               },
               "products": {
                 "type": "array",
@@ -6358,6 +6355,13 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Name": {
+                "type": "string"
+              },
+              "valid_from": {
+                "type": "string",
+                "format": "date-time"
               }
             }
           }
@@ -6414,7 +6418,7 @@
         "required": [
           "percent",
           "valid_until",
-          "is_active"
+          "Name"
         ],
         "properties": {
           "percent": {
@@ -6423,9 +6427,6 @@
           "valid_until": {
             "type": "string",
             "format": "date-time"
-          },
-          "is_active": {
-            "type": "boolean"
           },
           "products": {
             "type": "object",
@@ -7150,9 +7151,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -7173,15 +7171,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -7897,15 +7898,18 @@
               }
             }
           },
+          "Name": {
+            "type": "string"
+          },
+          "valid_from": {
+            "type": "string",
+            "format": "date-time"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
           },
           "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "publishedAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -10654,9 +10658,6 @@
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
-                                                              "is_active": {
-                                                                "type": "boolean"
-                                                              },
                                                               "products": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -10677,15 +10678,18 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "Name": {
+                                                                "type": "string"
+                                                              },
+                                                              "valid_from": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -12926,9 +12930,6 @@
                                     "type": "string",
                                     "format": "date-time"
                                   },
-                                  "is_active": {
-                                    "type": "boolean"
-                                  },
                                   "products": {
                                     "type": "object",
                                     "properties": {
@@ -12949,15 +12950,18 @@
                                       }
                                     }
                                   },
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "valid_from": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
                                   "updatedAt": {
-                                    "type": "string",
-                                    "format": "date-time"
-                                  },
-                                  "publishedAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
@@ -14637,9 +14641,6 @@
                         "type": "string",
                         "format": "date-time"
                       },
-                      "is_active": {
-                        "type": "boolean"
-                      },
                       "products": {
                         "type": "object",
                         "properties": {
@@ -15363,15 +15364,18 @@
                           }
                         }
                       },
+                      "Name": {
+                        "type": "string"
+                      },
+                      "valid_from": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
                       },
                       "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "publishedAt": {
                         "type": "string",
                         "format": "date-time"
                       },
@@ -16754,9 +16758,6 @@
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
-                                                                          "is_active": {
-                                                                            "type": "boolean"
-                                                                          },
                                                                           "products": {
                                                                             "type": "object",
                                                                             "properties": {
@@ -16777,15 +16778,18 @@
                                                                               }
                                                                             }
                                                                           },
+                                                                          "Name": {
+                                                                            "type": "string"
+                                                                          },
+                                                                          "valid_from": {
+                                                                            "type": "string",
+                                                                            "format": "date-time"
+                                                                          },
                                                                           "createdAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
                                                                           "updatedAt": {
-                                                                            "type": "string",
-                                                                            "format": "date-time"
-                                                                          },
-                                                                          "publishedAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
@@ -19201,9 +19205,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -19224,15 +19225,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
