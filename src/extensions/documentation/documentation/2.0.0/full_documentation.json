@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "2.0.0",
+    "version": "1.0.0",
     "title": "DOCUMENTATION",
     "description": "",
     "termsOfService": "YOUR_TERMS_OF_SERVICE_URL",
@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-14T21:22:03.634Z"
+    "x-generation-date": "2023-09-08T12:34:01.299Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25,8 +25,8 @@
   },
   "servers": [
     {
-      "url": "https://coral-app-xi63b.ondigitalocean.app/api",
-      "description": "d server"
+      "url": "http://localhost:1337/api",
+      "description": "Development server"
     }
   ],
   "externalDocs": {
@@ -1029,18 +1029,6 @@
                                           }
                                         }
                                       }
-                                    },
-                                    "localizations": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "array",
-                                          "items": {}
-                                        }
-                                      }
-                                    },
-                                    "locale": {
-                                      "type": "string"
                                     }
                                   }
                                 }
@@ -1067,9 +1055,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -1090,15 +1075,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -1298,6 +1286,9 @@
                                     },
                                     "priority": {
                                       "type": "integer"
+                                    },
+                                    "name": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -1757,6 +1748,10 @@
                               }
                             }
                           }
+                        },
+                        "price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
@@ -2883,18 +2878,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "localizations": {
-                                                                "type": "object",
-                                                                "properties": {
-                                                                  "data": {
-                                                                    "type": "array",
-                                                                    "items": {}
-                                                                  }
-                                                                }
-                                                              },
-                                                              "locale": {
-                                                                "type": "string"
                                                               }
                                                             }
                                                           }
@@ -2921,9 +2904,6 @@
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
-                                                              "is_active": {
-                                                                "type": "boolean"
-                                                              },
                                                               "products": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -2944,15 +2924,18 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "Name": {
+                                                                "type": "string"
+                                                              },
+                                                              "valid_from": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -3152,6 +3135,9 @@
                                                               },
                                                               "priority": {
                                                                 "type": "integer"
+                                                              },
+                                                              "name": {
+                                                                "type": "string"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -3611,6 +3597,10 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "price": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -4224,6 +4214,12 @@
                           }
                         }
                       },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -4358,37 +4354,6 @@
           }
         }
       },
-      "CategoryLocalizationRequest": {
-        "required": [
-          "name",
-          "category_pic",
-          "active",
-          "locale"
-        ],
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "category_pic": {
-            "oneOf": [
-              {
-                "type": "integer"
-              },
-              {
-                "type": "string"
-              }
-            ],
-            "example": "string or id"
-          },
-          "active": {
-            "type": "boolean"
-          },
-          "locale": {
-            "type": "string"
-          }
-        }
-      },
       "CategoryRequest": {
         "type": "object",
         "required": [
@@ -4419,77 +4384,6 @@
               },
               "active": {
                 "type": "boolean"
-              },
-              "locale": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      "CategoryResponseDataObjectLocalized": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "attributes": {
-            "$ref": "#/components/schemas/Category"
-          }
-        }
-      },
-      "CategoryLocalizationResponse": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "$ref": "#/components/schemas/CategoryResponseDataObjectLocalized"
-          },
-          "meta": {
-            "type": "object"
-          }
-        }
-      },
-      "CategoryListResponseDataItemLocalized": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "attributes": {
-            "$ref": "#/components/schemas/Category"
-          }
-        }
-      },
-      "CategoryLocalizationListResponse": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/CategoryListResponseDataItemLocalized"
-            }
-          },
-          "meta": {
-            "type": "object",
-            "properties": {
-              "pagination": {
-                "type": "object",
-                "properties": {
-                  "page": {
-                    "type": "integer"
-                  },
-                  "pageSize": {
-                    "type": "integer",
-                    "minimum": 25
-                  },
-                  "pageCount": {
-                    "type": "integer",
-                    "maximum": 1
-                  },
-                  "total": {
-                    "type": "integer"
-                  }
-                }
               }
             }
           }
@@ -5217,20 +5111,6 @@
                 }
               }
             }
-          },
-          "localizations": {
-            "type": "object",
-            "properties": {
-              "data": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/Category"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
           }
         }
       },
@@ -6451,7 +6331,7 @@
             "required": [
               "percent",
               "valid_until",
-              "is_active"
+              "Name"
             ],
             "type": "object",
             "properties": {
@@ -6461,9 +6341,6 @@
               "valid_until": {
                 "type": "string",
                 "format": "date-time"
-              },
-              "is_active": {
-                "type": "boolean"
               },
               "products": {
                 "type": "array",
@@ -6478,6 +6355,13 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "Name": {
+                "type": "string"
+              },
+              "valid_from": {
+                "type": "string",
+                "format": "date-time"
               }
             }
           }
@@ -6534,7 +6418,7 @@
         "required": [
           "percent",
           "valid_until",
-          "is_active"
+          "Name"
         ],
         "properties": {
           "percent": {
@@ -6543,9 +6427,6 @@
           "valid_until": {
             "type": "string",
             "format": "date-time"
-          },
-          "is_active": {
-            "type": "boolean"
           },
           "products": {
             "type": "object",
@@ -7244,18 +7125,6 @@
                                           }
                                         }
                                       }
-                                    },
-                                    "localizations": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "array",
-                                          "items": {}
-                                        }
-                                      }
-                                    },
-                                    "locale": {
-                                      "type": "string"
                                     }
                                   }
                                 }
@@ -7282,9 +7151,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -7305,15 +7171,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -7513,6 +7382,9 @@
                                     },
                                     "priority": {
                                       "type": "integer"
+                                    },
+                                    "name": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -7973,6 +7845,10 @@
                             }
                           }
                         },
+                        "price": {
+                          "type": "number",
+                          "format": "float"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -8022,15 +7898,18 @@
               }
             }
           },
+          "Name": {
+            "type": "string"
+          },
+          "valid_from": {
+            "type": "string",
+            "format": "date-time"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
           },
           "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "publishedAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -8948,7 +8827,8 @@
             "required": [
               "pic",
               "active",
-              "priority"
+              "priority",
+              "name"
             ],
             "type": "object",
             "properties": {
@@ -8968,6 +8848,9 @@
               },
               "priority": {
                 "type": "integer"
+              },
+              "name": {
+                "type": "string"
               }
             }
           }
@@ -9024,7 +8907,8 @@
         "required": [
           "pic",
           "active",
-          "priority"
+          "priority",
+          "name"
         ],
         "properties": {
           "pic": {
@@ -9653,6 +9537,9 @@
           },
           "priority": {
             "type": "integer"
+          },
+          "name": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -10745,18 +10632,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "localizations": {
-                                                                "type": "object",
-                                                                "properties": {
-                                                                  "data": {
-                                                                    "type": "array",
-                                                                    "items": {}
-                                                                  }
-                                                                }
-                                                              },
-                                                              "locale": {
-                                                                "type": "string"
                                                               }
                                                             }
                                                           }
@@ -10783,9 +10658,6 @@
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
-                                                              "is_active": {
-                                                                "type": "boolean"
-                                                              },
                                                               "products": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -10806,15 +10678,18 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "Name": {
+                                                                "type": "string"
+                                                              },
+                                                              "valid_from": {
+                                                                "type": "string",
+                                                                "format": "date-time"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -11014,6 +10889,9 @@
                                                               },
                                                               "priority": {
                                                                 "type": "integer"
+                                                              },
+                                                              "name": {
+                                                                "type": "string"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -11473,6 +11351,10 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "price": {
+                                                    "type": "number",
+                                                    "format": "float"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -12085,6 +11967,12 @@
                             }
                           }
                         }
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -13016,18 +12904,6 @@
                                         }
                                       }
                                     }
-                                  },
-                                  "localizations": {
-                                    "type": "object",
-                                    "properties": {
-                                      "data": {
-                                        "type": "array",
-                                        "items": {}
-                                      }
-                                    }
-                                  },
-                                  "locale": {
-                                    "type": "string"
                                   }
                                 }
                               }
@@ -13054,9 +12930,6 @@
                                     "type": "string",
                                     "format": "date-time"
                                   },
-                                  "is_active": {
-                                    "type": "boolean"
-                                  },
                                   "products": {
                                     "type": "object",
                                     "properties": {
@@ -13077,15 +12950,18 @@
                                       }
                                     }
                                   },
+                                  "Name": {
+                                    "type": "string"
+                                  },
+                                  "valid_from": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
                                   "updatedAt": {
-                                    "type": "string",
-                                    "format": "date-time"
-                                  },
-                                  "publishedAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
@@ -13285,6 +13161,9 @@
                                   },
                                   "priority": {
                                     "type": "integer"
+                                  },
+                                  "name": {
+                                    "type": "string"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -13745,6 +13624,10 @@
                           }
                         }
                       },
+                      "price": {
+                        "type": "number",
+                        "format": "float"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -13876,7 +13759,8 @@
             "required": [
               "name",
               "stock",
-              "is_offer"
+              "is_offer",
+              "price"
             ],
             "type": "object",
             "properties": {
@@ -13984,6 +13868,10 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "price": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -14040,7 +13928,8 @@
         "required": [
           "name",
           "stock",
-          "is_offer"
+          "is_offer",
+          "price"
         ],
         "properties": {
           "name": {
@@ -14726,18 +14615,6 @@
                             }
                           }
                         }
-                      },
-                      "localizations": {
-                        "type": "object",
-                        "properties": {
-                          "data": {
-                            "type": "array",
-                            "items": {}
-                          }
-                        }
-                      },
-                      "locale": {
-                        "type": "string"
                       }
                     }
                   }
@@ -14763,9 +14640,6 @@
                       "valid_until": {
                         "type": "string",
                         "format": "date-time"
-                      },
-                      "is_active": {
-                        "type": "boolean"
                       },
                       "products": {
                         "type": "object",
@@ -14974,6 +14848,9 @@
                                                 },
                                                 "priority": {
                                                   "type": "integer"
+                                                },
+                                                "name": {
+                                                  "type": "string"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -15434,6 +15311,10 @@
                                         }
                                       }
                                     },
+                                    "price": {
+                                      "type": "number",
+                                      "format": "float"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -15483,15 +15364,18 @@
                           }
                         }
                       },
+                      "Name": {
+                        "type": "string"
+                      },
+                      "valid_from": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
                       },
                       "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                      },
-                      "publishedAt": {
                         "type": "string",
                         "format": "date-time"
                       },
@@ -15754,6 +15638,10 @@
                 }
               }
             }
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
           },
           "createdAt": {
             "type": "string",
@@ -16844,18 +16732,6 @@
                                                                                 }
                                                                               }
                                                                             }
-                                                                          },
-                                                                          "localizations": {
-                                                                            "type": "object",
-                                                                            "properties": {
-                                                                              "data": {
-                                                                                "type": "array",
-                                                                                "items": {}
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "locale": {
-                                                                            "type": "string"
                                                                           }
                                                                         }
                                                                       }
@@ -16882,9 +16758,6 @@
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
-                                                                          "is_active": {
-                                                                            "type": "boolean"
-                                                                          },
                                                                           "products": {
                                                                             "type": "object",
                                                                             "properties": {
@@ -16905,15 +16778,18 @@
                                                                               }
                                                                             }
                                                                           },
+                                                                          "Name": {
+                                                                            "type": "string"
+                                                                          },
+                                                                          "valid_from": {
+                                                                            "type": "string",
+                                                                            "format": "date-time"
+                                                                          },
                                                                           "createdAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
                                                                           "updatedAt": {
-                                                                            "type": "string",
-                                                                            "format": "date-time"
-                                                                          },
-                                                                          "publishedAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
@@ -17113,6 +16989,9 @@
                                                                           },
                                                                           "priority": {
                                                                             "type": "integer"
+                                                                          },
+                                                                          "name": {
+                                                                            "type": "string"
                                                                           },
                                                                           "createdAt": {
                                                                             "type": "string",
@@ -17573,6 +17452,10 @@
                                                                   }
                                                                 }
                                                               },
+                                                              "price": {
+                                                                "type": "number",
+                                                                "format": "float"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -18024,6 +17907,12 @@
                                         }
                                       }
                                     }
+                                  },
+                                  "phoneNumber": {
+                                    "type": "string"
+                                  },
+                                  "fullName": {
+                                    "type": "string"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -19290,18 +19179,6 @@
                                           }
                                         }
                                       }
-                                    },
-                                    "localizations": {
-                                      "type": "object",
-                                      "properties": {
-                                        "data": {
-                                          "type": "array",
-                                          "items": {}
-                                        }
-                                      }
-                                    },
-                                    "locale": {
-                                      "type": "string"
                                     }
                                   }
                                 }
@@ -19328,9 +19205,6 @@
                                       "type": "string",
                                       "format": "date-time"
                                     },
-                                    "is_active": {
-                                      "type": "boolean"
-                                    },
                                     "products": {
                                       "type": "object",
                                       "properties": {
@@ -19351,15 +19225,18 @@
                                         }
                                       }
                                     },
+                                    "Name": {
+                                      "type": "string"
+                                    },
+                                    "valid_from": {
+                                      "type": "string",
+                                      "format": "date-time"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -19559,6 +19436,9 @@
                                     },
                                     "priority": {
                                       "type": "integer"
+                                    },
+                                    "name": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -20018,6 +19898,10 @@
                               }
                             }
                           }
+                        },
+                        "price": {
+                          "type": "number",
+                          "format": "float"
                         },
                         "createdAt": {
                           "type": "string",
@@ -20870,6 +20754,12 @@
                             }
                           }
                         }
+                      },
+                      "phoneNumber": {
+                        "type": "string"
+                      },
+                      "fullName": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -22706,98 +22596,6 @@
           }
         ],
         "operationId": "delete/categories/{id}"
-      }
-    },
-    "/categories/{id}/localizations": {
-      "post": {
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CategoryLocalizationResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "tags": [
-          "Category"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "number"
-            }
-          }
-        ],
-        "operationId": "post/categories/{id}/localizations",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CategoryLocalizationRequest"
-              }
-            }
-          }
-        }
       }
     },
     "/deliveries": {
