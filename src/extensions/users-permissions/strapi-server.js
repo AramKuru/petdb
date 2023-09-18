@@ -68,14 +68,18 @@ const crypto = require('crypto');
     const user = await strapi.db.query('plugin::users-permissions.user')
     .findOne({ where: { username: identifier} });
     console.log("userrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",user);
-    await strapi.db.query('plugin::users-permissions.user').update({
-        where: { id: user.id },
-        data: ctx.request.body,
-    }).then((res) => {
-        ctx.response.status = 200;
-    })
-        await strapi.plugins['users-permissions'].services.user.edit(user.id, { resetPasswordToken });
-
+    // await strapi.db.query('plugin::users-permissions.user').update({
+    //     where: { id: user.id },
+    //     data: ctx.request.body,
+    // }).then((res) => {
+    //     ctx.response.status = 200;
+    // })
+        await strapi.plugins['users-permissions'].services.user.edit(user.id, { resetPasswordToken }).then((res) => {
+                ctx.response.status = 200;
+            });
+            return ctx.send({
+                resetPasswordToken,
+              });
 }
 
 plugin.routes['content-api'].routes.push(
