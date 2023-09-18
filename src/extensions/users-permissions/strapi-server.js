@@ -91,10 +91,3 @@ plugin.routes['content-api'].routes.push(
 )
   return plugin;
 }
-
-// --------n------
-//   module.exports = (plugin) => {
-  
-
-//   return plugin;
-// }
