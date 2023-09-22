@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-18T18:59:56.325Z"
+    "x-generation-date": "2023-09-22T17:46:01.782Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1752,6 +1752,9 @@
                         "price": {
                           "type": "number",
                           "format": "float"
+                        },
+                        "Active": {
+                          "type": "boolean"
                         },
                         "createdAt": {
                           "type": "string",
@@ -3602,6 +3605,9 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
+                                                  "Active": {
+                                                    "type": "boolean"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -4215,6 +4221,21 @@
                         }
                       },
                       "fullName": {
+                        "type": "string"
+                      },
+                      "adressName": {
+                        "type": "string"
+                      },
+                      "addressType": {
+                        "type": "string"
+                      },
+                      "floorNumber": {
+                        "type": "string"
+                      },
+                      "flatNumber": {
+                        "type": "string"
+                      },
+                      "fullAdress": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -7846,6 +7867,9 @@
                           "type": "number",
                           "format": "float"
                         },
+                        "Active": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -11353,6 +11377,9 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
+                                                  "Active": {
+                                                    "type": "boolean"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -11966,6 +11993,21 @@
                         }
                       },
                       "fullName": {
+                        "type": "string"
+                      },
+                      "adressName": {
+                        "type": "string"
+                      },
+                      "addressType": {
+                        "type": "string"
+                      },
+                      "floorNumber": {
+                        "type": "string"
+                      },
+                      "flatNumber": {
+                        "type": "string"
+                      },
+                      "fullAdress": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -13622,6 +13664,9 @@
                         "type": "number",
                         "format": "float"
                       },
+                      "Active": {
+                        "type": "boolean"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -13754,7 +13799,8 @@
               "name",
               "stock",
               "is_offer",
-              "price"
+              "price",
+              "Active"
             ],
             "type": "object",
             "properties": {
@@ -13866,6 +13912,9 @@
               "price": {
                 "type": "number",
                 "format": "float"
+              },
+              "Active": {
+                "type": "boolean"
               }
             }
           }
@@ -13923,7 +13972,8 @@
           "name",
           "stock",
           "is_offer",
-          "price"
+          "price",
+          "Active"
         ],
         "properties": {
           "name": {
@@ -15309,6 +15359,9 @@
                                       "type": "number",
                                       "format": "float"
                                     },
+                                    "Active": {
+                                      "type": "boolean"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -15636,6 +15689,9 @@
           "price": {
             "type": "number",
             "format": "float"
+          },
+          "Active": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -17450,6 +17506,9 @@
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
+                                                              "Active": {
+                                                                "type": "boolean"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -17903,6 +17962,21 @@
                                     }
                                   },
                                   "fullName": {
+                                    "type": "string"
+                                  },
+                                  "adressName": {
+                                    "type": "string"
+                                  },
+                                  "addressType": {
+                                    "type": "string"
+                                  },
+                                  "floorNumber": {
+                                    "type": "string"
+                                  },
+                                  "flatNumber": {
+                                    "type": "string"
+                                  },
+                                  "fullAdress": {
                                     "type": "string"
                                   },
                                   "createdAt": {
@@ -19894,6 +19968,9 @@
                           "type": "number",
                           "format": "float"
                         },
+                        "Active": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -20747,6 +20824,21 @@
                         }
                       },
                       "fullName": {
+                        "type": "string"
+                      },
+                      "adressName": {
+                        "type": "string"
+                      },
+                      "addressType": {
+                        "type": "string"
+                      },
+                      "floorNumber": {
+                        "type": "string"
+                      },
+                      "flatNumber": {
+                        "type": "string"
+                      },
+                      "fullAdress": {
                         "type": "string"
                       },
                       "createdAt": {

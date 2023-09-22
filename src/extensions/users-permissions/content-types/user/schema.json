@@ -110,6 +110,23 @@
     "fullName": {
       "type": "string",
       "required": true
+    },
+    "adressName": {
+      "type": "string",
+      "required": true
+    },
+    "addressType": {
+      "type": "string",
+      "required": true
+    },
+    "floorNumber": {
+      "type": "string"
+    },
+    "flatNumber": {
+      "type": "string"
+    },
+    "fullAdress": {
+      "type": "string"
     }
   }
 }

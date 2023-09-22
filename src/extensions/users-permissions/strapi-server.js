@@ -67,7 +67,6 @@ const crypto = require('crypto');
     console.log(identifier,"-----",resetPasswordToken);
     const user = await strapi.db.query('plugin::users-permissions.user')
     .findOne({ where: { username: identifier} });
-    console.log("userrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",user);
     // await strapi.db.query('plugin::users-permissions.user').update({
     //     where: { id: user.id },
     //     data: ctx.request.body,
