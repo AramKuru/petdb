@@ -111,7 +111,7 @@
       "type": "float",
       "required": true
     },
-    "Active": {
+    "active": {
       "type": "boolean",
       "default": true,
       "required": true

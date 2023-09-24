@@ -28,7 +28,7 @@
       "target": "api::product.product",
       "mappedBy": "discount"
     },
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },

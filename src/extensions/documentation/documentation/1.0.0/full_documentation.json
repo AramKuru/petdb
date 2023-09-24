@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-22T17:46:01.782Z"
+    "x-generation-date": "2023-09-24T05:49:14.048Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1075,7 +1075,7 @@
                                         }
                                       }
                                     },
-                                    "Name": {
+                                    "name": {
                                       "type": "string"
                                     },
                                     "valid_from": {
@@ -1753,7 +1753,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "Active": {
+                        "active": {
                           "type": "boolean"
                         },
                         "createdAt": {
@@ -2927,7 +2927,7 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "Name": {
+                                                              "name": {
                                                                 "type": "string"
                                                               },
                                                               "valid_from": {
@@ -3605,7 +3605,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "Active": {
+                                                  "active": {
                                                     "type": "boolean"
                                                   },
                                                   "createdAt": {
@@ -3944,7 +3944,7 @@
                                         }
                                       }
                                     },
-                                    "Status": {
+                                    "status": {
                                       "type": "string",
                                       "enum": [
                                         "Confirmed",
@@ -4018,7 +4018,7 @@
                                   "city": {
                                     "type": "string"
                                   },
-                                  "Price": {
+                                  "price": {
                                     "type": "number",
                                     "format": "float"
                                   },
@@ -5163,14 +5163,14 @@
           "data": {
             "required": [
               "city",
-              "Price"
+              "price"
             ],
             "type": "object",
             "properties": {
               "city": {
                 "type": "string"
               },
-              "Price": {
+              "price": {
                 "type": "number",
                 "format": "float"
               }
@@ -5228,13 +5228,13 @@
         "type": "object",
         "required": [
           "city",
-          "Price"
+          "price"
         ],
         "properties": {
           "city": {
             "type": "string"
           },
-          "Price": {
+          "price": {
             "type": "number",
             "format": "float"
           },
@@ -5584,7 +5584,7 @@
               "phone_number": {
                 "type": "string"
               },
-              "Adress": {
+              "adress": {
                 "type": "string"
               }
             }
@@ -6270,7 +6270,7 @@
           "phone_number": {
             "type": "string"
           },
-          "Adress": {
+          "adress": {
             "type": "string"
           },
           "createdAt": {
@@ -6349,7 +6349,7 @@
             "required": [
               "percent",
               "valid_until",
-              "Name"
+              "name"
             ],
             "type": "object",
             "properties": {
@@ -6374,7 +6374,7 @@
                   "example": "string or id"
                 }
               },
-              "Name": {
+              "name": {
                 "type": "string"
               },
               "valid_from": {
@@ -6436,7 +6436,7 @@
         "required": [
           "percent",
           "valid_until",
-          "Name"
+          "name"
         ],
         "properties": {
           "percent": {
@@ -7189,7 +7189,7 @@
                                         }
                                       }
                                     },
-                                    "Name": {
+                                    "name": {
                                       "type": "string"
                                     },
                                     "valid_from": {
@@ -7867,7 +7867,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "Active": {
+                        "active": {
                           "type": "boolean"
                         },
                         "createdAt": {
@@ -7919,7 +7919,7 @@
               }
             }
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
           "valid_from": {
@@ -9637,7 +9637,7 @@
           "data": {
             "required": [
               "shipping_address",
-              "Status"
+              "status"
             ],
             "type": "object",
             "properties": {
@@ -9669,7 +9669,7 @@
                   "example": "string or id"
                 }
               },
-              "Status": {
+              "status": {
                 "type": "string",
                 "enum": [
                   "Confirmed",
@@ -9733,7 +9733,7 @@
         "type": "object",
         "required": [
           "shipping_address",
-          "Status"
+          "status"
         ],
         "properties": {
           "users_permissions_user": {
@@ -10699,7 +10699,7 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "Name": {
+                                                              "name": {
                                                                 "type": "string"
                                                               },
                                                               "valid_from": {
@@ -11377,7 +11377,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "Active": {
+                                                  "active": {
                                                     "type": "boolean"
                                                   },
                                                   "createdAt": {
@@ -11716,7 +11716,7 @@
                                         }
                                       }
                                     },
-                                    "Status": {
+                                    "status": {
                                       "type": "string",
                                       "enum": [
                                         "Confirmed",
@@ -11790,7 +11790,7 @@
                                   "city": {
                                     "type": "string"
                                   },
-                                  "Price": {
+                                  "price": {
                                     "type": "number",
                                     "format": "float"
                                   },
@@ -12081,7 +12081,7 @@
               }
             }
           },
-          "Status": {
+          "status": {
             "type": "string",
             "enum": [
               "Confirmed",
@@ -12986,7 +12986,7 @@
                                       }
                                     }
                                   },
-                                  "Name": {
+                                  "name": {
                                     "type": "string"
                                   },
                                   "valid_from": {
@@ -13664,7 +13664,7 @@
                         "type": "number",
                         "format": "float"
                       },
-                      "Active": {
+                      "active": {
                         "type": "boolean"
                       },
                       "createdAt": {
@@ -13800,7 +13800,7 @@
               "stock",
               "is_offer",
               "price",
-              "Active"
+              "active"
             ],
             "type": "object",
             "properties": {
@@ -13913,7 +13913,7 @@
                 "type": "number",
                 "format": "float"
               },
-              "Active": {
+              "active": {
                 "type": "boolean"
               }
             }
@@ -13973,7 +13973,7 @@
           "stock",
           "is_offer",
           "price",
-          "Active"
+          "active"
         ],
         "properties": {
           "name": {
@@ -15359,7 +15359,7 @@
                                       "type": "number",
                                       "format": "float"
                                     },
-                                    "Active": {
+                                    "active": {
                                       "type": "boolean"
                                     },
                                     "createdAt": {
@@ -15411,7 +15411,7 @@
                           }
                         }
                       },
-                      "Name": {
+                      "name": {
                         "type": "string"
                       },
                       "valid_from": {
@@ -15690,7 +15690,7 @@
             "type": "number",
             "format": "float"
           },
-          "Active": {
+          "active": {
             "type": "boolean"
           },
           "createdAt": {
@@ -16828,7 +16828,7 @@
                                                                               }
                                                                             }
                                                                           },
-                                                                          "Name": {
+                                                                          "name": {
                                                                             "type": "string"
                                                                           },
                                                                           "valid_from": {
@@ -17506,7 +17506,7 @@
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
-                                                              "Active": {
+                                                              "active": {
                                                                 "type": "boolean"
                                                               },
                                                               "createdAt": {
@@ -17759,7 +17759,7 @@
                                               "city": {
                                                 "type": "string"
                                               },
-                                              "Price": {
+                                              "price": {
                                                 "type": "number",
                                                 "format": "float"
                                               },
@@ -18117,7 +18117,7 @@
                           }
                         }
                       },
-                      "Status": {
+                      "status": {
                         "type": "string",
                         "enum": [
                           "Confirmed",
@@ -18335,7 +18335,7 @@
                       "phone_number": {
                         "type": "string"
                       },
-                      "Adress": {
+                      "adress": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -19290,7 +19290,7 @@
                                         }
                                       }
                                     },
-                                    "Name": {
+                                    "name": {
                                       "type": "string"
                                     },
                                     "valid_from": {
@@ -19968,7 +19968,7 @@
                           "type": "number",
                           "format": "float"
                         },
-                        "Active": {
+                        "active": {
                           "type": "boolean"
                         },
                         "createdAt": {
@@ -20547,7 +20547,7 @@
                                         }
                                       }
                                     },
-                                    "Status": {
+                                    "status": {
                                       "type": "string",
                                       "enum": [
                                         "Confirmed",
@@ -20621,7 +20621,7 @@
                                   "city": {
                                     "type": "string"
                                   },
-                                  "Price": {
+                                  "price": {
                                     "type": "number",
                                     "format": "float"
                                   },

@@ -32,7 +32,7 @@
     "phone_number": {
       "type": "string"
     },
-    "Adress": {
+    "adress": {
       "type": "string"
     }
   }

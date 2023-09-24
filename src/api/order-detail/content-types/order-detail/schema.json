@@ -27,7 +27,7 @@
       "relation": "oneToMany",
       "target": "api::order-item.order-item"
     },
-    "Status": {
+    "status": {
       "type": "enumeration",
       "enum": [
         "Confirmed",
