@@ -82,11 +82,6 @@
       "relation": "oneToOne",
       "target": "api::delivery.delivery"
     },
-    "admin": {
-      "type": "boolean",
-      "default": false,
-      "required": false
-    },
     "lattitude": {
       "type": "float"
     },
@@ -127,6 +122,9 @@
       "relation": "oneToMany",
       "target": "api::cart.cart",
       "mappedBy": "users_permissions_user"
+    },
+    "national_id": {
+      "type": "string"
     }
   }
 }
