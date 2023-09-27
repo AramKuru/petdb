@@ -4,7 +4,7 @@
   "info": {
     "singularName": "cart",
     "pluralName": "carts",
-    "displayName": "cart",
+    "displayName": "Cart",
     "description": ""
   },
   "options": {
@@ -12,20 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "quantity": {
+      "type": "integer",
+      "min": 1,
+      "required": true
+    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "carts"
     },
-    "quantity": {
-      "type": "integer",
-      "required": true
-    },
     "product": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "carts"
     }
   }
 }

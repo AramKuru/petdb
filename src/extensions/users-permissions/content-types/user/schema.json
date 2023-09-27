@@ -71,12 +71,6 @@
       "target": "api::wishlist.wishlist",
       "mappedBy": "users_permissions_user"
     },
-    "carts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::cart.cart",
-      "mappedBy": "users_permissions_user"
-    },
     "order_details": {
       "type": "relation",
       "relation": "oneToMany",
@@ -127,6 +121,12 @@
     },
     "fullAdress": {
       "type": "string"
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cart.cart",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
