@@ -16,6 +16,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
+      "private": true,
       "inversedBy": "order_details"
     },
     "shipping_address": {
@@ -25,7 +26,8 @@
     "order_items": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::order-item.order-item"
+      "target": "api::order-item.order-item",
+      "mappedBy": "order_detail"
     },
     "status": {
       "type": "enumeration",

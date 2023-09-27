@@ -24,6 +24,12 @@
     "price": {
       "type": "float",
       "required": true
+    },
+    "order_detail": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::order-detail.order-detail",
+      "inversedBy": "order_items"
     }
   }
 }

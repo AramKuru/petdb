@@ -121,6 +121,9 @@
       "relation": "oneToMany",
       "target": "api::cart.cart",
       "mappedBy": "product"
+    },
+    "times_ordered": {
+      "type": "integer"
     }
   }
 }

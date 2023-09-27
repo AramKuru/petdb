@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slideshows",
+  "info": {
+    "singularName": "slideshow",
+    "pluralName": "slideshows",
+    "displayName": "slideshow"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
