@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "sale"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "all": {
+      "type": "decimal"
+    },
+    "monthly": {
+      "type": "decimal"
+    }
+  }
+}

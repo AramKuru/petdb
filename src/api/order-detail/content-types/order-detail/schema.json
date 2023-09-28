@@ -40,6 +40,12 @@
       ],
       "required": true,
       "default": "Queue"
+    },
+    "shipping": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shipping.shipping",
+      "mappedBy": "order_detail"
     }
   }
 }

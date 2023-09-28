@@ -15,7 +15,8 @@
     "order_detail": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::order-detail.order-detail"
+      "target": "api::order-detail.order-detail",
+      "inversedBy": "shipping"
     },
     "ship_charge": {
       "type": "float",

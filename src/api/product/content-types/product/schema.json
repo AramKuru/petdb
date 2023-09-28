@@ -124,6 +124,12 @@
     },
     "times_ordered": {
       "type": "integer"
+    },
+    "productsort": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productsort.productsort",
+      "mappedBy": "product"
     }
   }
 }
