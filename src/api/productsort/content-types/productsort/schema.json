@@ -4,10 +4,11 @@
   "info": {
     "singularName": "productsort",
     "pluralName": "productsorts",
-    "displayName": "Productsort"
+    "displayName": "Productsort",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -18,10 +19,12 @@
       "inversedBy": "productsort"
     },
     "all": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "default": "0"
     },
     "monthly": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }

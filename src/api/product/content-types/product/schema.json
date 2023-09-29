@@ -122,9 +122,6 @@
       "target": "api::cart.cart",
       "mappedBy": "product"
     },
-    "times_ordered": {
-      "type": "integer"
-    },
     "productsort": {
       "type": "relation",
       "relation": "oneToOne",

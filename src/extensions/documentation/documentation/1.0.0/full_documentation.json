@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-28T00:13:03.288Z"
+    "x-generation-date": "2023-09-29T23:01:32.869Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2743,9 +2743,6 @@
                             }
                           }
                         },
-                        "times_ordered": {
-                          "type": "integer"
-                        },
                         "productsort": {
                           "type": "object",
                           "properties": {
@@ -2790,10 +2787,6 @@
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -4792,9 +4785,6 @@
                                                       }
                                                     }
                                                   },
-                                                  "times_ordered": {
-                                                    "type": "integer"
-                                                  },
                                                   "productsort": {
                                                     "type": "object",
                                                     "properties": {
@@ -4839,10 +4829,6 @@
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -9383,9 +9369,6 @@
                             }
                           }
                         },
-                        "times_ordered": {
-                          "type": "integer"
-                        },
                         "productsort": {
                           "type": "object",
                           "properties": {
@@ -9430,10 +9413,6 @@
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },
@@ -13098,9 +13077,6 @@
                                                       }
                                                     }
                                                   },
-                                                  "times_ordered": {
-                                                    "type": "integer"
-                                                  },
                                                   "productsort": {
                                                     "type": "object",
                                                     "properties": {
@@ -13145,10 +13121,6 @@
                                                                 "format": "date-time"
                                                               },
                                                               "updatedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "publishedAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
                                                               },
@@ -16529,9 +16501,6 @@
                           }
                         }
                       },
-                      "times_ordered": {
-                        "type": "integer"
-                      },
                       "productsort": {
                         "type": "object",
                         "properties": {
@@ -16576,10 +16545,6 @@
                                     "format": "date-time"
                                   },
                                   "updatedAt": {
-                                    "type": "string",
-                                    "format": "date-time"
-                                  },
-                                  "publishedAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
@@ -16902,9 +16867,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "times_ordered": {
-                "type": "integer"
               },
               "productsort": {
                 "oneOf": [
@@ -19350,9 +19312,6 @@
                                         }
                                       }
                                     },
-                                    "times_ordered": {
-                                      "type": "integer"
-                                    },
                                     "productsort": {
                                       "type": "object",
                                       "properties": {
@@ -19397,10 +19356,6 @@
                                                   "format": "date-time"
                                                 },
                                                 "updatedAt": {
-                                                  "type": "string",
-                                                  "format": "date-time"
-                                                },
-                                                "publishedAt": {
                                                   "type": "string",
                                                   "format": "date-time"
                                                 },
@@ -19794,9 +19749,6 @@
                 }
               }
             }
-          },
-          "times_ordered": {
-            "type": "integer"
           },
           "productsort": {
             "type": "object",
@@ -22373,9 +22325,6 @@
                           }
                         }
                       },
-                      "times_ordered": {
-                        "type": "integer"
-                      },
                       "productsort": {
                         "type": "object",
                         "properties": {
@@ -22420,10 +22369,6 @@
                                     "format": "date-time"
                                   },
                                   "updatedAt": {
-                                    "type": "string",
-                                    "format": "date-time"
-                                  },
-                                  "publishedAt": {
                                     "type": "string",
                                     "format": "date-time"
                                   },
@@ -22530,10 +22475,6 @@
             "format": "date-time"
           },
           "updatedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "publishedAt": {
             "type": "string",
             "format": "date-time"
           },
@@ -24840,9 +24781,6 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "times_ordered": {
-                                                                "type": "integer"
-                                                              },
                                                               "productsort": {
                                                                 "type": "object",
                                                                 "properties": {
@@ -24887,10 +24825,6 @@
                                                                             "format": "date-time"
                                                                           },
                                                                           "updatedAt": {
-                                                                            "type": "string",
-                                                                            "format": "date-time"
-                                                                          },
-                                                                          "publishedAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
                                                                           },
@@ -28986,9 +28920,6 @@
                             }
                           }
                         },
-                        "times_ordered": {
-                          "type": "integer"
-                        },
                         "productsort": {
                           "type": "object",
                           "properties": {
@@ -29033,10 +28964,6 @@
                                       "format": "date-time"
                                     },
                                     "updatedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "publishedAt": {
                                       "type": "string",
                                       "format": "date-time"
                                     },

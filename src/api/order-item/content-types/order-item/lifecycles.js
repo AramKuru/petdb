@@ -10,13 +10,36 @@ module.exports = {
       const { result, params } = event;
         if(result) {
           const timesOrdered = 
-            await strapi.entityService.findOne("api::product.product",params.data.product,{
-              fields: [ 'times_ordered']
+          await strapi.entityService.findMany('api::productsort.productsort', {
+            populate: {
+              product: true,
+              repeatableComponent: {
+                fields: ['id'],
+                filters: {
+                  id: {
+                    $eq: params.data.product,
+                  },
+                },
+              },
+            },
+          });
+            await strapi.entityService.update("api::productsort.productsort",timesOrdered[0].id, {
+              data:{
+                all: Number(timesOrdered[0].all) + params.data.quantity,
+                monthly: Number(timesOrdered[0].monthly) + params.data.quantity,
+              }
             })
 
-            await strapi.entityService.update("api::product.product",params.data.product, {
+
+          const sales = 
+            await strapi.entityService.findOne("api::sale.sale",1,{
+              fields: [ 'all','monthly']
+            })
+
+            await strapi.entityService.update("api::sale.sale",1, {
               data:{
-                times_ordered: timesOrdered.times_ordered + params.data.quantity
+                all: sales.all + params.data.price,
+                monthly: sales.monthly + params.data.price
               }
             })
 
