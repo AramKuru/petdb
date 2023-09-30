@@ -11,18 +11,16 @@ module.exports = {
         if(result) {
           const timesOrdered = 
           await strapi.entityService.findMany('api::productsort.productsort', {
-            populate: {
-              product: true,
-              repeatableComponent: {
-                fields: ['id'],
-                filters: {
-                  id: {
-                    $eq: params.data.product,
-                  },
+            populate: ['product'],
+            filters: {
+              order_detail: {
+                id: {
+                  $eq: params.data.product
                 },
-              },
+              }
             },
           });
+          console.log(timesOrdered);
             await strapi.entityService.update("api::productsort.productsort",timesOrdered[0].id, {
               data:{
                 all: Number(timesOrdered[0].all) + params.data.quantity,
