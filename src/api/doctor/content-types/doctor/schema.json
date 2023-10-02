@@ -26,18 +26,19 @@
     },
     "lattitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
-    "langtitude": {
+    "longitude": {
       "type": "float",
-      "required": true
+      "required": false
     },
     "pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "desc": {
       "type": "text"

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-30T00:55:41.968Z"
+    "x-generation-date": "2023-10-02T20:21:48.503Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9587,9 +9587,7 @@
           "data": {
             "required": [
               "name",
-              "gender",
-              "lattitude",
-              "langtitude"
+              "gender"
             ],
             "type": "object",
             "properties": {
@@ -9607,7 +9605,7 @@
                 "type": "number",
                 "format": "float"
               },
-              "langtitude": {
+              "longitude": {
                 "type": "number",
                 "format": "float"
               },
@@ -9695,9 +9693,7 @@
         "type": "object",
         "required": [
           "name",
-          "gender",
-          "lattitude",
-          "langtitude"
+          "gender"
         ],
         "properties": {
           "name": {
@@ -9714,7 +9710,7 @@
             "type": "number",
             "format": "float"
           },
-          "langtitude": {
+          "longitude": {
             "type": "number",
             "format": "float"
           },
