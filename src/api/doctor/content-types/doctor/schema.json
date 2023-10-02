@@ -24,7 +24,7 @@
       ],
       "required": true
     },
-    "lattitude": {
+    "latitude": {
       "type": "float",
       "required": false
     },
@@ -53,7 +53,7 @@
       "type": "text"
     },
     "desc_turkish": {
-      "type": "string"
+      "type": "text"
     },
     "rating": {
       "type": "decimal",
