@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-03T15:48:16.517Z"
+    "x-generation-date": "2023-10-03T16:08:43.893Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2591,7 +2591,7 @@
                                                   "fullName": {
                                                     "type": "string"
                                                   },
-                                                  "adressName": {
+                                                  "addressName": {
                                                     "type": "string"
                                                   },
                                                   "addressType": {
@@ -2603,7 +2603,7 @@
                                                   "flatNumber": {
                                                     "type": "string"
                                                   },
-                                                  "fullAdress": {
+                                                  "fullAddress": {
                                                     "type": "string"
                                                   },
                                                   "carts": {
@@ -5499,7 +5499,7 @@
                       "fullName": {
                         "type": "string"
                       },
-                      "adressName": {
+                      "addressName": {
                         "type": "string"
                       },
                       "addressType": {
@@ -5511,7 +5511,7 @@
                       "flatNumber": {
                         "type": "string"
                       },
-                      "fullAdress": {
+                      "fullAddress": {
                         "type": "string"
                       },
                       "carts": {
@@ -9217,7 +9217,7 @@
                                                   "fullName": {
                                                     "type": "string"
                                                   },
-                                                  "adressName": {
+                                                  "addressName": {
                                                     "type": "string"
                                                   },
                                                   "addressType": {
@@ -9229,7 +9229,7 @@
                                                   "flatNumber": {
                                                     "type": "string"
                                                   },
-                                                  "fullAdress": {
+                                                  "fullAddress": {
                                                     "type": "string"
                                                   },
                                                   "carts": {
@@ -13787,7 +13787,7 @@
                       "fullName": {
                         "type": "string"
                       },
-                      "adressName": {
+                      "addressName": {
                         "type": "string"
                       },
                       "addressType": {
@@ -13799,7 +13799,7 @@
                       "flatNumber": {
                         "type": "string"
                       },
-                      "fullAdress": {
+                      "fullAddress": {
                         "type": "string"
                       },
                       "carts": {
@@ -16345,7 +16345,7 @@
                                                 "fullName": {
                                                   "type": "string"
                                                 },
-                                                "adressName": {
+                                                "addressName": {
                                                   "type": "string"
                                                 },
                                                 "addressType": {
@@ -16357,7 +16357,7 @@
                                                 "flatNumber": {
                                                   "type": "string"
                                                 },
-                                                "fullAdress": {
+                                                "fullAddress": {
                                                   "type": "string"
                                                 },
                                                 "carts": {
@@ -19156,7 +19156,7 @@
                                                               "fullName": {
                                                                 "type": "string"
                                                               },
-                                                              "adressName": {
+                                                              "addressName": {
                                                                 "type": "string"
                                                               },
                                                               "addressType": {
@@ -19168,7 +19168,7 @@
                                                               "flatNumber": {
                                                                 "type": "string"
                                                               },
-                                                              "fullAdress": {
+                                                              "fullAddress": {
                                                                 "type": "string"
                                                               },
                                                               "carts": {
@@ -22169,7 +22169,7 @@
                                                 "fullName": {
                                                   "type": "string"
                                                 },
-                                                "adressName": {
+                                                "addressName": {
                                                   "type": "string"
                                                 },
                                                 "addressType": {
@@ -22181,7 +22181,7 @@
                                                 "flatNumber": {
                                                   "type": "string"
                                                 },
-                                                "fullAdress": {
+                                                "fullAddress": {
                                                   "type": "string"
                                                 },
                                                 "carts": {
@@ -25216,7 +25216,7 @@
                                   "fullName": {
                                     "type": "string"
                                   },
-                                  "adressName": {
+                                  "addressName": {
                                     "type": "string"
                                   },
                                   "addressType": {
@@ -25228,7 +25228,7 @@
                                   "flatNumber": {
                                     "type": "string"
                                   },
-                                  "fullAdress": {
+                                  "fullAddress": {
                                     "type": "string"
                                   },
                                   "carts": {
@@ -28764,7 +28764,7 @@
                                                   "fullName": {
                                                     "type": "string"
                                                   },
-                                                  "adressName": {
+                                                  "addressName": {
                                                     "type": "string"
                                                   },
                                                   "addressType": {
@@ -28776,7 +28776,7 @@
                                                   "flatNumber": {
                                                     "type": "string"
                                                   },
-                                                  "fullAdress": {
+                                                  "fullAddress": {
                                                     "type": "string"
                                                   },
                                                   "carts": {

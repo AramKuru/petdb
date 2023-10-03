@@ -100,7 +100,7 @@
       "type": "string",
       "required": true
     },
-    "adressName": {
+    "addressName": {
       "type": "string",
       "required": true
     },
@@ -114,7 +114,7 @@
     "flatNumber": {
       "type": "string"
     },
-    "fullAdress": {
+    "fullAddress": {
       "type": "string"
     },
     "carts": {
