@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-03T12:11:17.173Z"
+    "x-generation-date": "2023-10-03T12:19:34.660Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2441,7 +2441,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "lattitude": {
+                                                  "latitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -5349,7 +5349,7 @@
                           }
                         }
                       },
-                      "lattitude": {
+                      "latitude": {
                         "type": "number",
                         "format": "float"
                       },
@@ -9067,7 +9067,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "lattitude": {
+                                                  "latitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -13637,7 +13637,7 @@
                           }
                         }
                       },
-                      "lattitude": {
+                      "latitude": {
                         "type": "number",
                         "format": "float"
                       },
@@ -16195,7 +16195,7 @@
                                                     }
                                                   }
                                                 },
-                                                "lattitude": {
+                                                "latitude": {
                                                   "type": "number",
                                                   "format": "float"
                                                 },
@@ -19006,7 +19006,7 @@
                                                                   }
                                                                 }
                                                               },
-                                                              "lattitude": {
+                                                              "latitude": {
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
@@ -22019,7 +22019,7 @@
                                                     }
                                                   }
                                                 },
-                                                "lattitude": {
+                                                "latitude": {
                                                   "type": "number",
                                                   "format": "float"
                                                 },
@@ -25066,7 +25066,7 @@
                                       }
                                     }
                                   },
-                                  "lattitude": {
+                                  "latitude": {
                                     "type": "number",
                                     "format": "float"
                                   },
@@ -28614,7 +28614,7 @@
                                                       }
                                                     }
                                                   },
-                                                  "lattitude": {
+                                                  "latitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },

@@ -82,7 +82,7 @@
       "relation": "oneToOne",
       "target": "api::delivery.delivery"
     },
-    "lattitude": {
+    "latitude": {
       "type": "float"
     },
     "longitude": {
