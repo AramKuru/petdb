@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-02T22:19:56.564Z"
+    "x-generation-date": "2023-10-03T12:11:17.173Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2445,7 +2445,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "langtitude": {
+                                                  "longitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -5353,7 +5353,7 @@
                         "type": "number",
                         "format": "float"
                       },
-                      "langtitude": {
+                      "longitude": {
                         "type": "number",
                         "format": "float"
                       },
@@ -9071,7 +9071,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "langtitude": {
+                                                  "longitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },
@@ -13641,7 +13641,7 @@
                         "type": "number",
                         "format": "float"
                       },
-                      "langtitude": {
+                      "longitude": {
                         "type": "number",
                         "format": "float"
                       },
@@ -16199,7 +16199,7 @@
                                                   "type": "number",
                                                   "format": "float"
                                                 },
-                                                "langtitude": {
+                                                "longitude": {
                                                   "type": "number",
                                                   "format": "float"
                                                 },
@@ -19010,7 +19010,7 @@
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
-                                                              "langtitude": {
+                                                              "longitude": {
                                                                 "type": "number",
                                                                 "format": "float"
                                                               },
@@ -22023,7 +22023,7 @@
                                                   "type": "number",
                                                   "format": "float"
                                                 },
-                                                "langtitude": {
+                                                "longitude": {
                                                   "type": "number",
                                                   "format": "float"
                                                 },
@@ -25070,7 +25070,7 @@
                                     "type": "number",
                                     "format": "float"
                                   },
-                                  "langtitude": {
+                                  "longitude": {
                                     "type": "number",
                                     "format": "float"
                                   },
@@ -28618,7 +28618,7 @@
                                                     "type": "number",
                                                     "format": "float"
                                                   },
-                                                  "langtitude": {
+                                                  "longitude": {
                                                     "type": "number",
                                                     "format": "float"
                                                   },

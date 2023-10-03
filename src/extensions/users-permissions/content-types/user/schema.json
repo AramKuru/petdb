@@ -85,7 +85,7 @@
     "lattitude": {
       "type": "float"
     },
-    "langtitude": {
+    "longitude": {
       "type": "float"
     },
     "admin_picture": {
