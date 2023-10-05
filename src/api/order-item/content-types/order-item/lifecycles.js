@@ -9,6 +9,17 @@ module.exports = {
     async afterCreate(event) {
       const { result, params } = event;
         if(result) {
+          // const productQuantity = 
+          //   await strapi.entityService.findOne("api::product.product",params.data.product,{
+          //     fields: [ 'quantity' ]
+          //   })
+          //   console.log(productQuantity, params.data.quantity);
+          // await strapi.entityService.update("api::product.product",params.data.product, {
+          //   data:{
+          //     quantity: productQuantity.quantity + params.data.quantity,
+          //   }
+          // })
+
           const timesOrdered = 
           await strapi.entityService.findMany('api::productsort.productsort', {
             populate: ['product'],
