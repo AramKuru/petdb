@@ -3,25 +3,31 @@ const { ApplicationError } = errors;
 module.exports = {
   async beforeCreate(event) {
     const { result, params } = event;
-    
-      const productQuantity = 
+    let { data } =  params;
+      const product = 
       await strapi.entityService.findOne("api::product.product",params.data.product,{
-        fields: [ 'stock' ]
+        populate: ['discount'],
+        fields: [ 'stock' ,'price']
       })
-      console.log(productQuantity,"------  ------", params.data.quantity);
-      if (productQuantity.stock >= params.data.quantity) {
+      
+
+      console.log(product,"------  ------", params.data.quantity);
+      if (product.stock >= params.data.quantity) {
         await strapi.entityService.update("api::product.product",params.data.product, {
           data:{
-            stock: productQuantity.stock - params.data.quantity,
+            stock: product.stock - params.data.quantity,
           }
         })
-      }else throw new ApplicationError('Not enough item in stock', { stock: productQuantity.stock });
+        console.log("date",new Date().toISOString());
+        new Date().toISOString() > product.discount.valid_from && new Date().toISOString() < product.discount.valid_until?
+        data.price = Number(product.price) * (1 - (product.discount.percent/100)) : data.price = product.price;
+      }else throw new ApplicationError('Not enough item in stock', { stock: product.stock });
      
   },
     async afterCreate(event) {
       const { result, params } = event;
         if(result) {
-          
+          // increment product in productsort
           const timesOrdered = 
           await strapi.entityService.findMany('api::productsort.productsort', {
             populate: ['product'],
@@ -41,7 +47,7 @@ module.exports = {
               }
             })
         console.log(params,"paramsss");
-
+            // add sales 
           const sales = 
             await strapi.entityService.findOne("api::sale.sale",1,{
               fields: [ 'all','monthly']
@@ -54,6 +60,18 @@ module.exports = {
               }
             })
 
+            // increment order-detail
+            const getorderdetail = 
+            await strapi.entityService.findOne("api::order-detail.order-detail",1,{
+              fields: [ 'totalPrice','totalProducts']
+            })
+
+            await strapi.entityService.update("api::order-detail.order-detail",1, {
+              data:{
+                totalPrice: getorderdetail.totalPrice + params.data.quantity,
+                totalProducts: getorderdetail.totalProducts + params.data.quantity
+              }
+            })
         }
     },
   };

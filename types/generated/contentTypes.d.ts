@@ -1000,6 +1000,15 @@ export interface ApiOrderDetailOrderDetail extends Schema.CollectionType {
       'oneToOne',
       'api::shipping.shipping'
     >;
+    totalPrice: Attribute.BigInteger &
+      Attribute.SetMinMax<{
+        min: '0';
+      }> &
+      Attribute.DefaultTo<'0'>;
+    totalProducts: Attribute.Integer &
+      Attribute.SetMinMax<{
+        min: 0;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1035,7 +1044,11 @@ export interface ApiOrderItemOrderItem extends Schema.CollectionType {
       'api::product.product'
     >;
     quantity: Attribute.Integer & Attribute.Required;
-    price: Attribute.Float & Attribute.Required;
+    price: Attribute.BigInteger &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: '0';
+      }>;
     order_detail: Attribute.Relation<
       'api::order-item.order-item',
       'manyToOne',
@@ -1111,7 +1124,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'manyToMany',
       'api::animal.animal'
     >;
-    price: Attribute.Float & Attribute.Required;
+    price: Attribute.BigInteger & Attribute.Required;
     active: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     carts: Attribute.Relation<
       'api::product.product',

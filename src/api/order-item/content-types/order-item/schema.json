@@ -22,8 +22,9 @@
       "required": true
     },
     "price": {
-      "type": "float",
-      "required": true
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
     },
     "order_detail": {
       "type": "relation",

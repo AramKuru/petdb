@@ -109,7 +109,7 @@
       "inversedBy": "products"
     },
     "price": {
-      "type": "float",
+      "type": "biginteger",
       "required": true
     },
     "active": {

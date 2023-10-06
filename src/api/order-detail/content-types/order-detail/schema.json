@@ -46,6 +46,15 @@
       "relation": "oneToOne",
       "target": "api::shipping.shipping",
       "mappedBy": "order_detail"
+    },
+    "totalPrice": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "totalProducts": {
+      "type": "integer",
+      "min": 0
     }
   }
 }
