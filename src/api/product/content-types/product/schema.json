@@ -75,7 +75,8 @@
     "stock": {
       "type": "float",
       "required": true,
-      "pluginOptions": {}
+      "pluginOptions": {},
+      "min": 0
     },
     "is_offer": {
       "type": "boolean",
