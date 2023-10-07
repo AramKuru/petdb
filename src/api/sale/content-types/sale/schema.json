@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sale",
     "pluralName": "sales",
-    "displayName": "sale"
+    "displayName": "sale",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "all": {
-      "type": "decimal"
+      "type": "decimal",
+      "min": 0
     },
     "monthly": {
-      "type": "decimal"
+      "type": "decimal",
+      "min": 0
     }
   }
 }

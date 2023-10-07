@@ -19,12 +19,13 @@
     },
     "quantity": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "min": 0
     },
     "price": {
-      "type": "biginteger",
+      "type": "float",
       "required": true,
-      "min": "0"
+      "min": 0
     },
     "order_detail": {
       "type": "relation",
