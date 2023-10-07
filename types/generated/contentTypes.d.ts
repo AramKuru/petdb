@@ -689,6 +689,7 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'api::cart.cart'
     >;
     national_id: Attribute.String;
+    nParam: Attribute.String & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

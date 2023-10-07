@@ -125,6 +125,10 @@
     },
     "national_id": {
       "type": "string"
+    },
+    "nParam": {
+      "type": "string",
+      "unique": true
     }
   }
 }
