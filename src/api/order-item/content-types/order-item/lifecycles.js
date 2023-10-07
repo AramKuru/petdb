@@ -48,6 +48,7 @@ module.exports = {
   //       stock: product.stock,
   //     });
   // },
+  // 
   async afterCreate(event) {
     const { result, params } = event;
     if (result) {
