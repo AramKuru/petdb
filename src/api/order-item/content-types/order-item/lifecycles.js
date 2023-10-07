@@ -53,6 +53,8 @@ module.exports = {
     const { result, params } = event;
     if (result) {
       // increment product in productsort
+      console.log("timesOrdered----------------------",params.data.product);
+
       const timesOrdered = await strapi.entityService.findMany(
         "api::productsort.productsort",
         {
@@ -66,7 +68,7 @@ module.exports = {
           },
         }
       );
-      console.log(timesOrdered);
+      console.log("timesOrdered----------------------",timesOrdered);
       await strapi.entityService.update(
         "api::productsort.productsort",
         timesOrdered[0].id,
