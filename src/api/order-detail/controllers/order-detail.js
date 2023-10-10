@@ -20,13 +20,13 @@ module.exports = createCoreController('api::order-detail.order-detail'
     // Method 2: Wrapping a core action (leaves core logic in place)
     async find(ctx) {
         const { data, meta } = await super.find(ctx);
-
-        const basketsWithTotalPrice = data.map((basket) => {
-            const totalPrice = basket.attributes.order_items.data.reduce((total, item) => {
-              return total + item.attributes.price * item.attributes.quantity;
-            }, 0);
-            const totalItems = basket.attributes.order_items.data.reduce((total, item) => {
-              return total + item.attributes.quantity;
+          console.log("data", data);
+        const basketsWithTotalPrice = data?.map((basket) => {
+          const totalPrice = basket?.attributes?.order_items?.data?.reduce((total, item) => {
+            return total + item?.attributes?.price * item?.attributes?.quantity;
+          }, 0);
+            const totalItems = basket?.attributes?.order_items?.data?.reduce((total, item) => {
+              return total + item?.attributes?.quantity;
             }, 0);
       
             return {
@@ -38,10 +38,10 @@ module.exports = createCoreController('api::order-detail.order-detail'
             console.log(
                 "basketsWithTotalPrice",basketsWithTotalPrice
             );
-        data.map(x=>console.log(x.attributes.order_items))
+        // data.map(x=>console.log(x.attributes.order_items))
         
-        // some more custom logic
-        meta.date = Date.now()
+        // // some more custom logic
+        // meta.date = Date.now()
     
         return { basketsWithTotalPrice, meta };
       },
