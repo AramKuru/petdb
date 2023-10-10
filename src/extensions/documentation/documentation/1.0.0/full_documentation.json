@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-07T18:04:32.045Z"
+    "x-generation-date": "2023-10-10T18:21:45.485Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2325,14 +2325,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "totalPrice": {
-                                                                  "type": "string",
-                                                                  "pattern": "^\\d*$",
-                                                                  "example": "123456789"
-                                                                },
-                                                                "totalProducts": {
-                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -5245,14 +5237,6 @@
                                           }
                                         }
                                       }
-                                    },
-                                    "totalPrice": {
-                                      "type": "string",
-                                      "pattern": "^\\d*$",
-                                      "example": "123456789"
-                                    },
-                                    "totalProducts": {
-                                      "type": "integer"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -8978,14 +8962,6 @@
                                                                     }
                                                                   }
                                                                 },
-                                                                "totalPrice": {
-                                                                  "type": "string",
-                                                                  "pattern": "^\\d*$",
-                                                                  "example": "123456789"
-                                                                },
-                                                                "totalProducts": {
-                                                                  "type": "integer"
-                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -9676,6 +9652,12 @@
               "rating": {
                 "type": "number",
                 "format": "float"
+              },
+              "availability": {
+                "type": "string"
+              },
+              "phoneNumber": {
+                "type": "string"
               }
             }
           }
@@ -10392,6 +10374,12 @@
           "rating": {
             "type": "number",
             "format": "float"
+          },
+          "availability": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -11311,14 +11299,6 @@
                   }
                 ],
                 "example": "string or id"
-              },
-              "totalPrice": {
-                "type": "string",
-                "pattern": "^\\d*$",
-                "example": "123456789"
-              },
-              "totalProducts": {
-                "type": "integer"
               }
             }
           }
@@ -13570,14 +13550,6 @@
                                         }
                                       }
                                     },
-                                    "totalPrice": {
-                                      "type": "string",
-                                      "pattern": "^\\d*$",
-                                      "example": "123456789"
-                                    },
-                                    "totalProducts": {
-                                      "type": "integer"
-                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -13982,14 +13954,6 @@
                 }
               }
             }
-          },
-          "totalPrice": {
-            "type": "string",
-            "pattern": "^\\d*$",
-            "example": "123456789"
-          },
-          "totalProducts": {
-            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -16147,14 +16111,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "totalPrice": {
-                                                                "type": "string",
-                                                                "pattern": "^\\d*$",
-                                                                "example": "123456789"
-                                                              },
-                                                              "totalProducts": {
-                                                                "type": "integer"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -18970,14 +18926,6 @@
                                                                                   }
                                                                                 }
                                                                               }
-                                                                            },
-                                                                            "totalPrice": {
-                                                                              "type": "string",
-                                                                              "pattern": "^\\d*$",
-                                                                              "example": "123456789"
-                                                                            },
-                                                                            "totalProducts": {
-                                                                              "type": "integer"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -21995,14 +21943,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "totalPrice": {
-                                                                "type": "string",
-                                                                "pattern": "^\\d*$",
-                                                                "example": "123456789"
-                                                              },
-                                                              "totalProducts": {
-                                                                "type": "integer"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -25626,14 +25566,6 @@
                           }
                         }
                       },
-                      "totalPrice": {
-                        "type": "string",
-                        "pattern": "^\\d*$",
-                        "example": "123456789"
-                      },
-                      "totalProducts": {
-                        "type": "integer"
-                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -28616,14 +28548,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "totalPrice": {
-                                                                  "type": "string",
-                                                                  "pattern": "^\\d*$",
-                                                                  "example": "123456789"
-                                                                },
-                                                                "totalProducts": {
-                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",

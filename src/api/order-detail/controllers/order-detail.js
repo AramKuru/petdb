@@ -6,7 +6,8 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::order-detail.order-detail' , ({ strapi }) =>  ({
+module.exports = createCoreController('api::order-detail.order-detail'
+ , ({ strapi }) =>  ({
     // Method 1: Creating an entirely custom action
     // async exampleAction(ctx) {
     //   try {
@@ -45,4 +46,5 @@ module.exports = createCoreController('api::order-detail.order-detail' , ({ stra
         return { basketsWithTotalPrice, meta };
       },
   
-  }));
+  })
+  );

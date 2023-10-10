@@ -914,6 +914,8 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
         min: 1;
         max: 5;
       }>;
+    availability: Attribute.String;
+    phoneNumber: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1001,15 +1003,6 @@ export interface ApiOrderDetailOrderDetail extends Schema.CollectionType {
       'oneToOne',
       'api::shipping.shipping'
     >;
-    totalPrice: Attribute.BigInteger &
-      Attribute.SetMinMax<{
-        min: '0';
-      }> &
-      Attribute.DefaultTo<'0'>;
-    totalProducts: Attribute.Integer &
-      Attribute.SetMinMax<{
-        min: 0;
-      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

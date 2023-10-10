@@ -59,6 +59,12 @@
       "type": "decimal",
       "max": 5,
       "min": 1
+    },
+    "availability": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
     }
   }
 }
