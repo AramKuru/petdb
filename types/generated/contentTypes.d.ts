@@ -903,6 +903,8 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
     gender: Attribute.Enumeration<['Male', 'Female']> & Attribute.Required;
     latitude: Attribute.Float;
     longitude: Attribute.Float;
+    availability: Attribute.String;
+    phoneNumber: Attribute.String;
     pic: Attribute.Media;
     desc: Attribute.Text;
     desc_sorani: Attribute.Text;
@@ -914,8 +916,6 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
         min: 1;
         max: 5;
       }>;
-    availability: Attribute.String;
-    phoneNumber: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

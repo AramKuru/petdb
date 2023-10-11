@@ -31,7 +31,15 @@
     "longitude": {
       "type": "float",
       "required": false
+    }
+    ,
+    "availability": {
+      "type": "string"
     },
+    "phoneNumber": {
+      "type": "string"
+    }
+    ,
     "pic": {
       "type": "media",
       "multiple": false,
@@ -59,12 +67,6 @@
       "type": "decimal",
       "max": 5,
       "min": 1
-    },
-    "availability": {
-      "type": "string"
-    },
-    "phoneNumber": {
-      "type": "string"
     }
   }
 }
