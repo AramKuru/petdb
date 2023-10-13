@@ -6,7 +6,7 @@ module.exports = {
     let { data } = params;
     const product = await strapi.entityService.findOne(
       "api::product.product",
-      params.data.product,
+      params?.data?.product,
       {
         populate: ["discount"],
         fields: ["stock", "price"],
@@ -14,22 +14,22 @@ module.exports = {
     );
 
     // console.log(product, "------  ------", params.data.quantity);
-    if (product.stock >= params.data.quantity) {
+    if (product?.stock >= params?.data?.quantity) {
       await strapi.entityService.update(
         "api::product.product",
-        params.data.product,
+        params?.data?.product,
         {
           data: {
-            stock: product.stock - params.data.quantity,
+            stock: product?.stock - params?.data?.quantity,
           },
         }
       );
       console.log("date", new Date().toISOString());
-      new Date().toISOString() > product.discount.valid_from &&
-      new Date().toISOString() < product.discount.valid_until
+      new Date()?.toISOString() > product?.discount?.valid_from &&
+      new Date()?.toISOString() < product?.discount?.valid_until
         ? (data.price =
-            Number(product.price) * (1 - product.discount.percent / 100))
-        : (data.price = product.price);
+            Number(product?.price) * (1 - product?.discount?.percent / 100)) ?? Number(product?.price)
+        : (data.price = product?.price);
 
       // increment order-detail
       // const getorderdetail =
@@ -45,7 +45,7 @@ module.exports = {
       // })
     } else
       throw new ApplicationError("Not enough item in stock", {
-        stock: product.stock,
+        stock: product?.stock,
       });
   },
   
@@ -53,7 +53,7 @@ module.exports = {
     const { result, params } = event;
     if (result) {
       // increment product in productsort
-      console.log("params.data.product----------------------",params.data.product);
+      console.log("params.data.product----------------------",params?.data?.product);
 
       const timesOrdered = await strapi.entityService.findMany(
         "api::productsort.productsort",
@@ -62,21 +62,21 @@ module.exports = {
           filters: {
             product: {
               id: {
-                $eq: params.data.product,
+                $eq: params?.data?.product,
               },
             },
           },
         }
       );
       console.log("timesOrdered----------------------",timesOrdered);
-      console.log("timesOrdered[0].id----------------------",timesOrdered[0].id);
+      console.log("timesOrdered[0].id----------------------",timesOrdered[0]?.id);
       await strapi.entityService.update(
         "api::productsort.productsort",
-        timesOrdered[0].id,
+        timesOrdered[0]?.id,
         {
           data: {
-            all: Number(timesOrdered[0].all) + params.data.quantity,
-            monthly: Number(timesOrdered[0].monthly) + params.data.quantity,
+            all: Number(timesOrdered[0]?.all) + params?.data?.quantity,
+            monthly: Number(timesOrdered[0]?.monthly) + params?.data?.quantity,
           },
         }
       );
@@ -89,8 +89,8 @@ module.exports = {
 
       await strapi.entityService.update("api::sale.sale", 1, {
         data: {
-          all: sales.all + params.data.price,
-          monthly: sales.monthly + params.data.price,
+          all: sales?.all + params?.data?.price,
+          monthly: sales?.monthly + params?.data?.price,
         },
       });
     }
