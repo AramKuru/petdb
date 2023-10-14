@@ -1,19 +1,22 @@
-const axios = require('axios');
+const axios = require("axios");
 module.exports = {
-    // do this on production 
-    beforeCreate(event) {
-      let { data, where, select, populate } = event.params;
-  
-      const ctx = strapi.requestContext.get();
-      data.users_permissions_user = ctx.state.user.id;
-    },
-    async afterUpdate(event) {
-      let { data, where, select, populate } = event.params;
-  // Import the `axios` package.
-      
+  // do this on production
+  beforeCreate(event) {
+    let { data, where, select, populate } = event.params;
 
-    //const { dataa } = await axios.Axios.call('https://hub.docker.com/v2/repositories/strapi/strapi/'); console.log(data); 
-    },
-  
-    
-  };
+    const ctx = strapi.requestContext.get();
+    data.users_permissions_user = ctx.state.user.id;
+  },
+  async afterUpdate(event) {
+    let { data, where, select, populate } = event.params;
+    // strapi.notification.sendNotification(
+    //   "e4xeH6V9QQKZIu0FJMnC55:APA91bGYQ0XOUCVruW1PoYxertjC2DXP2sKyv1p1dVBV-MW5zjErvL8nz1E1bR4hOc7yg2J5Lc5cHAVU9sTS8QLd1yVDYTsFnn6Eo4eniEhA18UdrXymFG2M9j8ubB9BpFg-1RcchJ1J",
+    //   {
+    //     notification: {
+    //       title: `this is title`,
+    //       body: `this is body`,
+    //     },
+    //   }
+    // );
+  },
+};

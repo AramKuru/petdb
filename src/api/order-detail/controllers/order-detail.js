@@ -49,6 +49,7 @@ module.exports = createCoreController('api::order-detail.order-detail'
               longitude: dataaValue?.users_permissions_user?.longitude,
               latitude: dataaValue?.users_permissions_user?.latitude,
               username: dataaValue?.users_permissions_user?.username,
+              nParam: dataaValue?.users_permissions_user?.nParam,
             };
             return {
               ...basket,

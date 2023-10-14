@@ -68,8 +68,6 @@ module.exports = {
           },
         }
       );
-      console.log("timesOrdered----------------------",timesOrdered);
-      console.log("timesOrdered[0].id----------------------",timesOrdered[0]?.id);
       await strapi.entityService.update(
         "api::productsort.productsort",
         timesOrdered[0]?.id,
