@@ -36,10 +36,11 @@
         "On_Way",
         "Preparing",
         "Queue",
-        "Cancelled"
+        "Cancelled",
+        "Processing"
       ],
       "required": true,
-      "default": "Queue"
+      "default": "Preparing"
     },
     "shipping": {
       "type": "relation",

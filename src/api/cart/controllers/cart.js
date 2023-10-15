@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * cart controller
+ *  task controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;

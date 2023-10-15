@@ -765,8 +765,7 @@ export interface ApiCartCart extends Schema.CollectionType {
       'api::cart.cart',
       'manyToOne',
       'plugin::users-permissions.user'
-    > &
-      Attribute.Private;
+    >;
     product: Attribute.Relation<
       'api::cart.cart',
       'manyToOne',
@@ -994,10 +993,10 @@ export interface ApiOrderDetailOrderDetail extends Schema.CollectionType {
       'api::order-item.order-item'
     >;
     status: Attribute.Enumeration<
-      ['Confirmed', 'On_Way', 'Preparing', 'Queue', 'Cancelled']
+      ['Confirmed', 'On_Way', 'Preparing', 'Queue', 'Cancelled', 'Processing']
     > &
       Attribute.Required &
-      Attribute.DefaultTo<'Queue'>;
+      Attribute.DefaultTo<'Preparing'>;
     shipping: Attribute.Relation<
       'api::order-detail.order-detail',
       'oneToOne',

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-14T13:27:18.261Z"
+    "x-generation-date": "2023-10-15T21:11:56.683Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2225,7 +2225,8 @@
                                                                     "On_Way",
                                                                     "Preparing",
                                                                     "Queue",
-                                                                    "Cancelled"
+                                                                    "Cancelled",
+                                                                    "Processing"
                                                                   ]
                                                                 },
                                                                 "shipping": {
@@ -5137,7 +5138,8 @@
                                         "On_Way",
                                         "Preparing",
                                         "Queue",
-                                        "Cancelled"
+                                        "Cancelled",
+                                        "Processing"
                                       ]
                                     },
                                     "shipping": {
@@ -8861,7 +8863,8 @@
                                                                     "On_Way",
                                                                     "Preparing",
                                                                     "Queue",
-                                                                    "Cancelled"
+                                                                    "Cancelled",
+                                                                    "Processing"
                                                                   ]
                                                                 },
                                                                 "shipping": {
@@ -11286,7 +11289,8 @@
                   "On_Way",
                   "Preparing",
                   "Queue",
-                  "Cancelled"
+                  "Cancelled",
+                  "Processing"
                 ]
               },
               "shipping": {
@@ -13449,7 +13453,8 @@
                                         "On_Way",
                                         "Preparing",
                                         "Queue",
-                                        "Cancelled"
+                                        "Cancelled",
+                                        "Processing"
                                       ]
                                     },
                                     "shipping": {
@@ -13935,7 +13940,8 @@
               "On_Way",
               "Preparing",
               "Queue",
-              "Cancelled"
+              "Cancelled",
+              "Processing"
             ]
           },
           "shipping": {
@@ -16011,7 +16017,8 @@
                                                                   "On_Way",
                                                                   "Preparing",
                                                                   "Queue",
-                                                                  "Cancelled"
+                                                                  "Cancelled",
+                                                                  "Processing"
                                                                 ]
                                                               },
                                                               "shipping": {
@@ -18826,7 +18833,8 @@
                                                                                 "On_Way",
                                                                                 "Preparing",
                                                                                 "Queue",
-                                                                                "Cancelled"
+                                                                                "Cancelled",
+                                                                                "Processing"
                                                                               ]
                                                                             },
                                                                             "shipping": {
@@ -21843,7 +21851,8 @@
                                                                   "On_Way",
                                                                   "Preparing",
                                                                   "Queue",
-                                                                  "Cancelled"
+                                                                  "Cancelled",
+                                                                  "Processing"
                                                                 ]
                                                               },
                                                               "shipping": {
@@ -25465,7 +25474,8 @@
                           "On_Way",
                           "Preparing",
                           "Queue",
-                          "Cancelled"
+                          "Cancelled",
+                          "Processing"
                         ]
                       },
                       "shipping": {
@@ -28448,7 +28458,8 @@
                                                                     "On_Way",
                                                                     "Preparing",
                                                                     "Queue",
-                                                                    "Cancelled"
+                                                                    "Cancelled",
+                                                                    "Processing"
                                                                   ]
                                                                 },
                                                                 "shipping": {
