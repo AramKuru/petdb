@@ -28,16 +28,17 @@ module.exports = createCoreController('api::order-detail.order-detail'
             console.log(
               "timesOrderedtimesOrdered",dataa[1]?.id
             );
-         console.log("data", data );
-        const basketsWithTotalPrice = data?.map((basket) => {
-          console.log(basket?.id);
-          const totalPrice = basket?.attributes?.order_items?.data?.reduce((total, item) => {
-            return total + item?.attributes?.price * item?.attributes?.quantity;
-          }, 0);
-            const totalItems = basket?.attributes?.order_items?.data?.reduce((total, item) => {
-              return total + item?.attributes?.quantity;
-            }, 0);
-            //to return user data
+            const basketsWithTotalPrice = data?.map((basket) => {
+              
+              const totalPrice = basket?.attributes?.order_items?.data?.reduce((total, item) => {
+            
+                return total + item?.attributes?.price * item?.attributes?.quantity;
+              }, 0);
+              const totalItems = basket?.attributes?.order_items?.data?.reduce((total, item) => {
+                return total + item?.attributes?.quantity;
+              }, 0);
+              
+            // to return user data
             const dataaValue = dataa.find((dataaItem) => dataaItem?.id === basket?.id);
             const dataaFlatNumberAndAddressName = {
               flatNumber: dataaValue?.users_permissions_user?.flatNumber,
@@ -58,9 +59,9 @@ module.exports = createCoreController('api::order-detail.order-detail'
               user:dataaFlatNumberAndAddressName,
             };
           });
-            console.log(
-                "basketsWithTotalPrice",basketsWithTotalPrice
-            );
+            // console.log(
+            //     "basketsWithTotalPrice",basketsWithTotalPrice
+            // );
 
             
         

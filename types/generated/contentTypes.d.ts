@@ -932,6 +932,40 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
   };
 }
 
+export interface ApiFeedbackFeedback extends Schema.CollectionType {
+  collectionName: 'feedbacks';
+  info: {
+    singularName: 'feedback';
+    pluralName: 'feedbacks';
+    displayName: 'Feedback';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    feedBack: Attribute.Text & Attribute.Required;
+    users_permissions_user: Attribute.Relation<
+      'api::feedback.feedback',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::feedback.feedback',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::feedback.feedback',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFilterFilter extends Schema.CollectionType {
   collectionName: 'filters';
   info: {
@@ -1351,6 +1385,7 @@ declare module '@strapi/types' {
       'api::delivery.delivery': ApiDeliveryDelivery;
       'api::discount.discount': ApiDiscountDiscount;
       'api::doctor.doctor': ApiDoctorDoctor;
+      'api::feedback.feedback': ApiFeedbackFeedback;
       'api::filter.filter': ApiFilterFilter;
       'api::order-detail.order-detail': ApiOrderDetailOrderDetail;
       'api::order-item.order-item': ApiOrderItemOrderItem;

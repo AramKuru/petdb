@@ -18,13 +18,13 @@ module.exports = async (ctx, config, { strapi }) => {
 
   // create
   if (["POST"].includes(ctx.request.method) && !ctx.params.id) {
-    ctx.request.body.data.owner = user.id;
+    ctx.request.body.data.owner = user?.id;
   }
   // find
-  else if (["GET"].includes(ctx.request.method) && !ctx.params.id) {
+  else if (["GET"].includes(ctx?.request?.method) && !ctx?.params?.id) {
     ctx.request.query.filters = {
-      ...(ctx.request.query.filters || {}),
-      users_permissions_user: user.id
+      ...(ctx?.request?.query?.filters || {}),
+      users_permissions_user: user?.id
     //   users_permissions_user: { '$eq': user.id }
     };
   }
