@@ -13,7 +13,6 @@ module.exports = {
       }
     );
 
-    // console.log(product, "------  ------", params.data.quantity);
     if (product?.stock >= params?.data?.quantity) {
       await strapi.entityService.update(
         "api::product.product",
@@ -24,7 +23,7 @@ module.exports = {
           },
         }
       );
-      console.log("date", new Date().toISOString());
+      // console.log("date", new Date().toISOString());
       new Date()?.toISOString() > product?.discount?.valid_from &&
       new Date()?.toISOString() < product?.discount?.valid_until
         ? (data.price =
@@ -53,7 +52,7 @@ module.exports = {
     const { result, params } = event;
     if (result) {
       // increment product in productsort
-      console.log("params.data.product----------------------",params?.data?.product);
+      // console.log("params.data.product----------------------",params?.data?.product);
 
       const timesOrdered = await strapi.entityService.findMany(
         "api::productsort.productsort",
@@ -78,19 +77,19 @@ module.exports = {
           },
         }
       );
-      console.log(params, "paramsss");
+      // console.log(params, "paramsss");
       // add sales
-      const sales = await strapi.entityService.findOne("api::sale.sale", 1, {
-        fields: ["all", "monthly"],
-      });
-      console.log("sales----------------------",sales);
+      // const sales = await strapi.entityService.findOne("api::sale.sale", 1, {
+      //   fields: ["all", "monthly"],
+      // });
+      // console.log("sales----------------------",sales);
 
-      await strapi.entityService.update("api::sale.sale", 1, {
-        data: {
-          all: sales?.all + params?.data?.price,
-          monthly: sales?.monthly + params?.data?.price,
-        },
-      });
+      // await strapi.entityService.update("api::sale.sale", 1, {
+      //   data: {
+      //     all: sales?.all + params?.data?.price,
+      //     monthly: sales?.monthly + params?.data?.price,
+      //   },
+      // });
     }
   },
 };
