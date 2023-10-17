@@ -76,6 +76,6 @@ module.exports = createCoreController("api::order-item.order-item", () => ({
     allSales.map((x) => {allSale += x.price * x.quantity;allQuantity+=x.quantity});
     monthSales.map((x) => {monthSale += x.price * x.quantity;monthQuantity+=x.quantity});
     todaySales.map((x) => {todaySale += x.price * x.quantity;todayQuantity+=x.quantity});
-    ctx.send({ allSale ,monthSale,todaySale,allQuantity,monthQuantity,todayQuantity});
+    ctx.send([{ allSale , allQuantity},{monthSale, monthQuantity},{todaySale,todayQuantity}]);
   },
 }));
