@@ -1277,8 +1277,7 @@ export interface ApiShippingShipping extends Schema.CollectionType {
       'api::shipping.shipping',
       'oneToOne',
       'plugin::users-permissions.user'
-    > &
-      Attribute.Private;
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

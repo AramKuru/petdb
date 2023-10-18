@@ -5,5 +5,14 @@
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
-
-module.exports = createCoreRouter('api::shipping.shipping');
+const isOwner = {
+    name: "global::isOwner",
+    config: { contentType: "shipping" },
+};
+module.exports = createCoreRouter('api::shipping.shipping',{
+    config: {
+        find: {
+            policies: [isOwner],
+        }, 
+    },
+});
