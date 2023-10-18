@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-17T21:39:15.785Z"
+    "x-generation-date": "2023-10-18T17:43:58.552Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2633,6 +2633,12 @@
                                                   },
                                                   "nParam": {
                                                     "type": "string"
+                                                  },
+                                                  "car_plate": {
+                                                    "type": "string"
+                                                  },
+                                                  "age": {
+                                                    "type": "integer"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -5546,6 +5552,12 @@
                       },
                       "nParam": {
                         "type": "string"
+                      },
+                      "car_plate": {
+                        "type": "string"
+                      },
+                      "age": {
+                        "type": "integer"
                       },
                       "createdAt": {
                         "type": "string",
@@ -9271,6 +9283,12 @@
                                                   },
                                                   "nParam": {
                                                     "type": "string"
+                                                  },
+                                                  "car_plate": {
+                                                    "type": "string"
+                                                  },
+                                                  "age": {
+                                                    "type": "integer"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -13036,6 +13054,12 @@
                       "nParam": {
                         "type": "string"
                       },
+                      "car_plate": {
+                        "type": "string"
+                      },
+                      "age": {
+                        "type": "integer"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -16562,6 +16586,12 @@
                       "nParam": {
                         "type": "string"
                       },
+                      "car_plate": {
+                        "type": "string"
+                      },
+                      "age": {
+                        "type": "integer"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -19125,6 +19155,12 @@
                                                 },
                                                 "nParam": {
                                                   "type": "string"
+                                                },
+                                                "car_plate": {
+                                                  "type": "string"
+                                                },
+                                                "age": {
+                                                  "type": "integer"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -21941,6 +21977,12 @@
                                                               },
                                                               "nParam": {
                                                                 "type": "string"
+                                                              },
+                                                              "car_plate": {
+                                                                "type": "string"
+                                                              },
+                                                              "age": {
+                                                                "type": "integer"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -24959,6 +25001,12 @@
                                                 },
                                                 "nParam": {
                                                   "type": "string"
+                                                },
+                                                "car_plate": {
+                                                  "type": "string"
+                                                },
+                                                "age": {
+                                                  "type": "integer"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -28011,6 +28059,12 @@
                                   },
                                   "nParam": {
                                     "type": "string"
+                                  },
+                                  "car_plate": {
+                                    "type": "string"
+                                  },
+                                  "age": {
+                                    "type": "integer"
                                   },
                                   "createdAt": {
                                     "type": "string",
@@ -31566,6 +31620,12 @@
                                                   },
                                                   "nParam": {
                                                     "type": "string"
+                                                  },
+                                                  "car_plate": {
+                                                    "type": "string"
+                                                  },
+                                                  "age": {
+                                                    "type": "integer"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",

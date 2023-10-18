@@ -690,6 +690,8 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     >;
     national_id: Attribute.String;
     nParam: Attribute.String & Attribute.Unique;
+    car_plate: Attribute.String;
+    age: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

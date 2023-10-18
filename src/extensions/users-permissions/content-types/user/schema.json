@@ -129,6 +129,12 @@
     "nParam": {
       "type": "string",
       "unique": true
+    },
+    "car_plate": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
     }
   }
 }
