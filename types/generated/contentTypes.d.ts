@@ -1345,8 +1345,7 @@ export interface ApiWishlistWishlist extends Schema.CollectionType {
       'api::wishlist.wishlist',
       'manyToOne',
       'plugin::users-permissions.user'
-    > &
-      Attribute.Private;
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
