@@ -29,6 +29,12 @@ module.exports = async (ctx, config, { strapi }) => {
     //   users_permissions_user: { '$eq': user.id }
     };
   }
+  else if (["GET"].includes(ctx?.request?.method) && !ctx?.params?.id) {
+    ctx.request.query.filters = {
+      ...(ctx?.request?.query?.filters || {})
+    //   users_permissions_user: { '$eq': user.id }
+    };
+  }
   
   // findOne, update, delete
   else if (["PUT", "DELETE", "GET"].includes(ctx.request.method) && ctx.params.id) {
