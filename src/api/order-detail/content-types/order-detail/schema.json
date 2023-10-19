@@ -16,7 +16,6 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "private": true,
       "inversedBy": "order_details"
     },
     "shipping_address": {

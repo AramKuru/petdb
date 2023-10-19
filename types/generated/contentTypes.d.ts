@@ -1020,8 +1020,7 @@ export interface ApiOrderDetailOrderDetail extends Schema.CollectionType {
       'api::order-detail.order-detail',
       'manyToOne',
       'plugin::users-permissions.user'
-    > &
-      Attribute.Private;
+    >;
     shipping_address: Attribute.String & Attribute.Required;
     order_items: Attribute.Relation<
       'api::order-detail.order-detail',
