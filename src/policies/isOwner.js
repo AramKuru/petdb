@@ -10,7 +10,7 @@ const { PolicyError } = require("@strapi/utils").errors;
 module.exports = async (ctx, config, { strapi }) => {
     console.log(config.contentType);
   strapi.log.info("In isOwner policy.");
-
+  console.log(ctx.state.user.role.name );
   const user = ctx.state.user;
   if (!user.id) {
     throw new PolicyError("You must be logged in to access this resource", {});
@@ -21,7 +21,8 @@ module.exports = async (ctx, config, { strapi }) => {
     ctx.request.body.data.owner = user?.id;
   }
   // find
-  else if (["GET"].includes(ctx?.request?.method) && !ctx?.params?.id) {
+
+  else if (["GET"].includes(ctx?.request?.method) && !ctx?.params?.id && ctx.state.user.role.name=="Authenticated") {
     ctx.request.query.filters = {
       ...(ctx?.request?.query?.filters || {}),
       users_permissions_user: user?.id
