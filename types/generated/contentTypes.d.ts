@@ -915,7 +915,7 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
     rating: Attribute.Decimal &
       Attribute.SetMinMax<{
         min: 1;
-        max: 5;
+        max: 6;
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
