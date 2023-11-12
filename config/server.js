@@ -4,6 +4,7 @@ const forgotPasswordTemplate = require('./email-templates/forgot-password');
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
+  url: env('', 'http://localhost:1337'), // this is new
   cron: {
     enabled: true,
     tasks: cronTasks,

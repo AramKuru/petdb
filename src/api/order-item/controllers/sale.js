@@ -82,10 +82,11 @@ module.exports = createCoreController("api::order-item.order-item", () => ({
     let todayQuantity = 0;
     let productstotalprice = 0;
     let productsQuantity = 0;
+    let productsCount = 0;
     allSales.map((x) => {allSale += x.price * x.quantity;allQuantity+=x.quantity});
     monthSales.map((x) => {monthSale += x.price * x.quantity;monthQuantity+=x.quantity});
     todaySales.map((x) => {todaySale += x.price * x.quantity;todayQuantity+=x.quantity});
-    products.map((x) => {productstotalprice += x.price * x.stock;productsQuantity+=x.stock});
-    ctx.send([{name:"Products",sale:productstotalprice,quantity:productsQuantity},{name:"Orders", sale:allSale , quantity:allQuantity},{name:"Net Sales(Monthly)",sale:monthSale, quantity:monthQuantity},{name:"Net Sales (Today)" ,sale:todaySale,quantity:todayQuantity}]);
+    products.map((x) => {productstotalprice += x.price * x.stock;productsQuantity+=x.stock;productsCount+=1});
+    ctx.send([{name:"Products",sale:productstotalprice,quantity:productsQuantity,productsCount},{name:"Orders", sale:allSale , quantity:allQuantity},{name:"Net Sales(Monthly)",sale:monthSale, quantity:monthQuantity},{name:"Net Sales (Today)" ,sale:todaySale,quantity:todayQuantity}]);
   },
 }));
