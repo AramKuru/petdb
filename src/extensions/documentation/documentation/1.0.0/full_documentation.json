@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-11-26T21:27:12.997Z"
+    "x-generation-date": "2023-11-30T18:50:06.534Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -129,6 +129,15 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "name_arabic": {
+                "type": "string"
+              },
+              "name_sorani": {
+                "type": "string"
+              },
+              "name_turkish": {
+                "type": "string"
               }
             }
           }
@@ -989,6 +998,15 @@
                                     "active": {
                                       "type": "boolean"
                                     },
+                                    "name_sorani": {
+                                      "type": "string"
+                                    },
+                                    "name_turkish": {
+                                      "type": "string"
+                                    },
+                                    "name_arabic": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -1700,6 +1718,15 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "name_arabic": {
+                                        "type": "string"
+                                      },
+                                      "name_sorani": {
+                                        "type": "string"
+                                      },
+                                      "name_turkish": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -2890,6 +2917,15 @@
               }
             }
           },
+          "name_arabic": {
+            "type": "string"
+          },
+          "name_sorani": {
+            "type": "string"
+          },
+          "name_turkish": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -3929,6 +3965,15 @@
                                                               "active": {
                                                                 "type": "boolean"
                                                               },
+                                                              "name_sorani": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_turkish": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_arabic": {
+                                                                "type": "string"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -4640,6 +4685,15 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "name_arabic": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_sorani": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_turkish": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -5720,6 +5774,15 @@
               },
               "active": {
                 "type": "boolean"
+              },
+              "name_sorani": {
+                "type": "string"
+              },
+              "name_turkish": {
+                "type": "string"
+              },
+              "name_arabic": {
+                "type": "string"
               }
             }
           }
@@ -6406,6 +6469,15 @@
           },
           "active": {
             "type": "boolean"
+          },
+          "name_sorani": {
+            "type": "string"
+          },
+          "name_turkish": {
+            "type": "string"
+          },
+          "name_arabic": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -7639,6 +7711,15 @@
                                     "active": {
                                       "type": "boolean"
                                     },
+                                    "name_sorani": {
+                                      "type": "string"
+                                    },
+                                    "name_turkish": {
+                                      "type": "string"
+                                    },
+                                    "name_arabic": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -8350,6 +8431,15 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "name_arabic": {
+                                        "type": "string"
+                                      },
+                                      "name_sorani": {
+                                        "type": "string"
+                                      },
+                                      "name_turkish": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -11430,6 +11520,15 @@
                                                               "active": {
                                                                 "type": "boolean"
                                                               },
+                                                              "name_sorani": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_turkish": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_arabic": {
+                                                                "type": "string"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -12141,6 +12240,15 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "name_arabic": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_sorani": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_turkish": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -14962,6 +15070,15 @@
                                                               "active": {
                                                                 "type": "boolean"
                                                               },
+                                                              "name_sorani": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_turkish": {
+                                                                "type": "string"
+                                                              },
+                                                              "name_arabic": {
+                                                                "type": "string"
+                                                              },
                                                               "createdAt": {
                                                                 "type": "string",
                                                                 "format": "date-time"
@@ -15673,6 +15790,15 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "name_arabic": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_sorani": {
+                                                                  "type": "string"
+                                                                },
+                                                                "name_turkish": {
+                                                                  "type": "string"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -17511,6 +17637,15 @@
                                   "active": {
                                     "type": "boolean"
                                   },
+                                  "name_sorani": {
+                                    "type": "string"
+                                  },
+                                  "name_turkish": {
+                                    "type": "string"
+                                  },
+                                  "name_arabic": {
+                                    "type": "string"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -18222,6 +18357,15 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "name_arabic": {
+                                      "type": "string"
+                                    },
+                                    "name_sorani": {
+                                      "type": "string"
+                                    },
+                                    "name_turkish": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -20357,6 +20501,15 @@
                       "active": {
                         "type": "boolean"
                       },
+                      "name_sorani": {
+                        "type": "string"
+                      },
+                      "name_turkish": {
+                        "type": "string"
+                      },
+                      "name_arabic": {
+                        "type": "string"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -21044,6 +21197,15 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "name_arabic": {
+                                                    "type": "string"
+                                                  },
+                                                  "name_sorani": {
+                                                    "type": "string"
+                                                  },
+                                                  "name_turkish": {
+                                                    "type": "string"
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -23357,6 +23519,15 @@
                                   "active": {
                                     "type": "boolean"
                                   },
+                                  "name_sorani": {
+                                    "type": "string"
+                                  },
+                                  "name_turkish": {
+                                    "type": "string"
+                                  },
+                                  "name_arabic": {
+                                    "type": "string"
+                                  },
                                   "createdAt": {
                                     "type": "string",
                                     "format": "date-time"
@@ -24068,6 +24239,15 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "name_arabic": {
+                                      "type": "string"
+                                    },
+                                    "name_sorani": {
+                                      "type": "string"
+                                    },
+                                    "name_turkish": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -26712,6 +26892,15 @@
                                                                           "active": {
                                                                             "type": "boolean"
                                                                           },
+                                                                          "name_sorani": {
+                                                                            "type": "string"
+                                                                          },
+                                                                          "name_turkish": {
+                                                                            "type": "string"
+                                                                          },
+                                                                          "name_arabic": {
+                                                                            "type": "string"
+                                                                          },
                                                                           "createdAt": {
                                                                             "type": "string",
                                                                             "format": "date-time"
@@ -27423,6 +27612,15 @@
                                                                                   }
                                                                                 }
                                                                               }
+                                                                            },
+                                                                            "name_arabic": {
+                                                                              "type": "string"
+                                                                            },
+                                                                            "name_sorani": {
+                                                                              "type": "string"
+                                                                            },
+                                                                            "name_turkish": {
+                                                                              "type": "string"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -29976,6 +30174,15 @@
                                     "active": {
                                       "type": "boolean"
                                     },
+                                    "name_sorani": {
+                                      "type": "string"
+                                    },
+                                    "name_turkish": {
+                                      "type": "string"
+                                    },
+                                    "name_arabic": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -30687,6 +30894,15 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "name_arabic": {
+                                        "type": "string"
+                                      },
+                                      "name_sorani": {
+                                        "type": "string"
+                                      },
+                                      "name_turkish": {
+                                        "type": "string"
                                       },
                                       "createdAt": {
                                         "type": "string",

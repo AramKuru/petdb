@@ -729,6 +729,9 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
       'manyToMany',
       'api::product.product'
     >;
+    name_arabic: Attribute.String;
+    name_sorani: Attribute.String;
+    name_turkish: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -797,6 +800,9 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required;
     category_pic: Attribute.Media & Attribute.Required;
     active: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
+    name_sorani: Attribute.String;
+    name_turkish: Attribute.String;
+    name_arabic: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

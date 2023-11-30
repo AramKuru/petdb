@@ -34,6 +34,15 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "name_sorani": {
+      "type": "string"
+    },
+    "name_turkish": {
+      "type": "string"
+    },
+    "name_arabic": {
+      "type": "string"
     }
   }
 }
