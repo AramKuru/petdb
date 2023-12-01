@@ -724,14 +724,14 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     pic: Attribute.Media;
     active: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
-    products: Attribute.Relation<
-      'api::animal.animal',
-      'manyToMany',
-      'api::product.product'
-    >;
     name_arabic: Attribute.String;
     name_sorani: Attribute.String;
     name_turkish: Attribute.String;
+    categories: Attribute.Relation<
+      'api::animal.animal',
+      'oneToMany',
+      'api::category.category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -803,6 +803,16 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     name_sorani: Attribute.String;
     name_turkish: Attribute.String;
     name_arabic: Attribute.String;
+    animal: Attribute.Relation<
+      'api::category.category',
+      'manyToOne',
+      'api::animal.animal'
+    >;
+    products: Attribute.Relation<
+      'api::category.category',
+      'manyToMany',
+      'api::product.product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1122,9 +1132,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String & Attribute.Required;
-    category: Attribute.Relation<
+    categories: Attribute.Relation<
       'api::product.product',
-      'oneToOne',
+      'manyToMany',
       'api::category.category'
     >;
     discount: Attribute.Relation<
@@ -1157,11 +1167,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
     capacity: Attribute.String;
     package_count: Attribute.Float;
     pic: Attribute.Media;
-    animals: Attribute.Relation<
-      'api::product.product',
-      'manyToMany',
-      'api::animal.animal'
-    >;
     price: Attribute.Float &
       Attribute.Required &
       Attribute.SetMinMax<{

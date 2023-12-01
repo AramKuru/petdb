@@ -17,10 +17,11 @@
       "required": true,
       "pluginOptions": {}
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
     },
     "discount": {
       "type": "relation",
@@ -101,12 +102,6 @@
         "images"
       ],
       "pluginOptions": {}
-    },
-    "animals": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::animal.animal",
-      "inversedBy": "products"
     },
     "price": {
       "type": "float",

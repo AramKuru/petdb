@@ -33,12 +33,6 @@
       "default": true,
       "required": true
     },
-    "products": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "mappedBy": "animals"
-    },
     "name_arabic": {
       "type": "string"
     },
@@ -47,6 +41,12 @@
     },
     "name_turkish": {
       "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "animal"
     }
   }
 }
