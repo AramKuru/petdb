@@ -47,6 +47,13 @@
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "animal"
+    },
+    "priority": {
+      "type": "integer",
+      "max": 0
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

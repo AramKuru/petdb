@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-12-01T11:04:40.327Z"
+    "x-generation-date": "2023-12-01T18:21:58.468Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -138,6 +138,12 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "priority": {
+                "type": "integer"
+              },
+              "color": {
+                "type": "string"
               }
             }
           }
@@ -1186,6 +1192,12 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "priority": {
+                                      "type": "integer"
+                                    },
+                                    "color": {
+                                      "type": "string"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -2897,6 +2909,9 @@
                             }
                           }
                         },
+                        "priority": {
+                          "type": "integer"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -2945,6 +2960,12 @@
                 }
               }
             }
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "color": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
@@ -4182,6 +4203,12 @@
                                                                                 }
                                                                               }
                                                                             },
+                                                                            "priority": {
+                                                                              "type": "integer"
+                                                                            },
+                                                                            "color": {
+                                                                              "type": "string"
+                                                                            },
                                                                             "createdAt": {
                                                                               "type": "string",
                                                                               "format": "date-time"
@@ -4249,6 +4276,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "priority": {
+                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -5848,6 +5878,9 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "priority": {
+                "type": "integer"
               }
             }
           }
@@ -8557,6 +8590,9 @@
                                         }
                                       }
                                     },
+                                    "priority": {
+                                      "type": "integer"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -8605,6 +8641,12 @@
                             }
                           }
                         }
+                      },
+                      "priority": {
+                        "type": "integer"
+                      },
+                      "color": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -8673,6 +8715,9 @@
                 }
               }
             }
+          },
+          "priority": {
+            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -10103,6 +10148,12 @@
                                                       }
                                                     }
                                                   },
+                                                  "priority": {
+                                                    "type": "integer"
+                                                  },
+                                                  "color": {
+                                                    "type": "string"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -10170,6 +10221,9 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "priority": {
+                                        "type": "integer"
                                       },
                                       "createdAt": {
                                         "type": "string",
@@ -13932,6 +13986,12 @@
                                                                                 }
                                                                               }
                                                                             },
+                                                                            "priority": {
+                                                                              "type": "integer"
+                                                                            },
+                                                                            "color": {
+                                                                              "type": "string"
+                                                                            },
                                                                             "createdAt": {
                                                                               "type": "string",
                                                                               "format": "date-time"
@@ -13999,6 +14059,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "priority": {
+                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -17502,6 +17565,12 @@
                                                                                 }
                                                                               }
                                                                             },
+                                                                            "priority": {
+                                                                              "type": "integer"
+                                                                            },
+                                                                            "color": {
+                                                                              "type": "string"
+                                                                            },
                                                                             "createdAt": {
                                                                               "type": "string",
                                                                               "format": "date-time"
@@ -17569,6 +17638,9 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                },
+                                                                "priority": {
+                                                                  "type": "integer"
                                                                 },
                                                                 "createdAt": {
                                                                   "type": "string",
@@ -20089,6 +20161,12 @@
                                                     }
                                                   }
                                                 },
+                                                "priority": {
+                                                  "type": "integer"
+                                                },
+                                                "color": {
+                                                  "type": "string"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -20156,6 +20234,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "priority": {
+                                      "type": "integer"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -22962,6 +23043,12 @@
                                         }
                                       }
                                     },
+                                    "priority": {
+                                      "type": "integer"
+                                    },
+                                    "color": {
+                                      "type": "string"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -24672,6 +24759,9 @@
                             }
                           }
                         },
+                        "priority": {
+                          "type": "integer"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -25983,6 +26073,12 @@
                                                     }
                                                   }
                                                 },
+                                                "priority": {
+                                                  "type": "integer"
+                                                },
+                                                "color": {
+                                                  "type": "string"
+                                                },
                                                 "createdAt": {
                                                   "type": "string",
                                                   "format": "date-time"
@@ -26050,6 +26146,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "priority": {
+                                      "type": "integer"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -29376,6 +29475,12 @@
                                                                                             }
                                                                                           }
                                                                                         },
+                                                                                        "priority": {
+                                                                                          "type": "integer"
+                                                                                        },
+                                                                                        "color": {
+                                                                                          "type": "string"
+                                                                                        },
                                                                                         "createdAt": {
                                                                                           "type": "string",
                                                                                           "format": "date-time"
@@ -29443,6 +29548,9 @@
                                                                                   }
                                                                                 }
                                                                               }
+                                                                            },
+                                                                            "priority": {
+                                                                              "type": "integer"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -32678,6 +32786,12 @@
                                                       }
                                                     }
                                                   },
+                                                  "priority": {
+                                                    "type": "integer"
+                                                  },
+                                                  "color": {
+                                                    "type": "string"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -32745,6 +32859,9 @@
                                             }
                                           }
                                         }
+                                      },
+                                      "priority": {
+                                        "type": "integer"
                                       },
                                       "createdAt": {
                                         "type": "string",

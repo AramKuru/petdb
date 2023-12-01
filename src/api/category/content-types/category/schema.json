@@ -55,6 +55,10 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "categories"
+    },
+    "priority": {
+      "type": "integer",
+      "max": 0
     }
   }
 }

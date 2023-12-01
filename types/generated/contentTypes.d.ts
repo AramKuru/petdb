@@ -732,6 +732,11 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
       'oneToMany',
       'api::category.category'
     >;
+    priority: Attribute.Integer &
+      Attribute.SetMinMax<{
+        max: 0;
+      }>;
+    color: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -813,6 +818,10 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'manyToMany',
       'api::product.product'
     >;
+    priority: Attribute.Integer &
+      Attribute.SetMinMax<{
+        max: 0;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
