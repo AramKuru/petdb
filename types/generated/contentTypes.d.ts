@@ -734,7 +734,7 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
     >;
     priority: Attribute.Integer &
       Attribute.SetMinMax<{
-        max: 0;
+        min: 0;
       }>;
     color: Attribute.String;
     createdAt: Attribute.DateTime;
@@ -820,7 +820,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     >;
     priority: Attribute.Integer &
       Attribute.SetMinMax<{
-        max: 0;
+        min: 0;
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
