@@ -27,7 +27,7 @@ module.exports = createCoreController('api::product.product',({ strapi }) =>  ({
            },
          },
        });
-       if(entry?.name?.toLowerCase() == "all"){
+       if(entry?.name?.toLowerCase() == "all"){ 
         ctx.query.filters.categories.id.$eq = entry?.animal?.categories?.map((obj) => obj.id)
        }
     //    console.log(entry?.animal?.categories?.map((obj) => obj?.id));
