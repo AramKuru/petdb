@@ -13,22 +13,25 @@ module.exports = createCoreController('api::product.product',({ strapi }) =>  ({
     async find(ctx) {
       // some custom logic here
       ctx.query = { ...ctx.query, local: 'en' }
-  console.log(ctx?.query?.filters?.categories?.id?.$eq);
+      if (ctx?.query?.filters?.categories?.id?.$eq) {
+        // console.log(ctx?.query?.filters?.categories?.id?.$eq);
   
-  const entry = await strapi.entityService.findOne('api::category.category', ctx?.query?.filters?.categories?.id?.$eq, {
-    fields: ['id','name'],
-   populate: {
-     animal: {
-       fields: ['id' ],
-       populate: {
-         categories: {fields: ['id']},
-       },
-     },
-   },
- });
- ctx.query.filters.categories.id.$eq = entry?.animal?.categories.map((obj) => obj.id)
+        const entry = await strapi.entityService.findOne('api::category.category', ctx?.query?.filters?.categories?.id?.$eq, {
+          fields: ['id','name'],
+         populate: {
+           animal: {
+             fields: ['id' ],
+             populate: {
+               categories: {fields: ['id']},
+             },
+           },
+         },
+       });
+       ctx.query.filters.categories.id.$eq = entry?.animal?.categories?.map((obj) => obj.id)
+      
+    //    console.log(entry?.animal?.categories?.map((obj) => obj?.id));
+      }
 
- console.log(entry?.animal?.categories.map((obj) => obj.id));
       // Calling the default core action
       const { data, meta } = await super.find(ctx);
   
