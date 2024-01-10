@@ -4,7 +4,8 @@
   "info": {
     "singularName": "slideshow",
     "pluralName": "slideshows",
-    "displayName": "slideshow"
+    "displayName": "slideshow",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,6 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "pic": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pic_arabic": {
       "allowedTypes": [
         "images",
         "files",
@@ -19,8 +31,27 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false,
-      "required": true
+      "multiple": false
+    },
+    "pic_sorani": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "pic_turkish": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

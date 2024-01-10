@@ -1320,12 +1320,16 @@ export interface ApiSlideshowSlideshow extends Schema.CollectionType {
     singularName: 'slideshow';
     pluralName: 'slideshows';
     displayName: 'slideshow';
+    description: '';
   };
   options: {
     draftAndPublish: false;
   };
   attributes: {
     pic: Attribute.Media & Attribute.Required;
+    pic_arabic: Attribute.Media;
+    pic_sorani: Attribute.Media;
+    pic_turkish: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
