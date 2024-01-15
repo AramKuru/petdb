@@ -8,7 +8,6 @@ module.exports = ({ env }) => ({
       database: env('DATABASE_NAME'),
       user: env('DATABASE_USERNAME'),
       password: env('DATABASE_PASSWORD'),
-      url:'https://petsworld-petsworld.irr5vw.easypanel.host/',
       ssl: false
     },
     debug: false,
