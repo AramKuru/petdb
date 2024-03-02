@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+const axios = require("axios");
 // const _ = require('lodash');
 // const grant = require('grant-koa');
 // module.exports = (plugin) => {
@@ -34,7 +35,7 @@ const crypto = require('crypto');
 // }
 
 
-  module.exports = (plugin) => {
+  module.exports = (plugin,env) => {
   plugin.controllers.user.updateMe = async (ctx) => {
       if (!ctx.state.user || !ctx.state.user.id) {
           return ctx.response.status = 401;
@@ -86,6 +87,65 @@ plugin.routes['content-api'].routes.push(
         method: "POST",
         path: "/user/forgotThePassword",
         handler: "user.forgotThePassword",
+        config: {
+            prefix: "",
+            policies: []
+        }
+    }
+)
+//this is the new test fot iraq otp
+  plugin.controllers.user.verify = async (ctx) => {
+    // console.log(ctx);
+    // console.log(ctx.request.body);
+    // console.log(ctx.request.body.phone_number);
+    const code = crypto.randomInt(100000,999999);
+    // Send a POST request
+    const url = 'https://gateway.standingtech.com/api/v4/sms/send';
+
+    const body = {
+      recipient: ctx.request.body.phone_number,
+      sender_id: "Pets world",
+      type: "whatsapp",
+      message: code,
+      lang: "en"
+    };
+  
+    const options = {
+      method: 'POST',
+      headers: {
+        
+        'Authorization': `Bearer ${env('EMAIL_FROM')}`, // Set content type to JSON
+        'Content-Type': 'application/json', // Set content type to JSON
+        'Accept': 'application/json', // Set content type to JSON
+        // Replace with any required authorization headers (if applicable)
+      },
+      body: JSON.stringify(body), // Convert data to JSON string
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      if (response.ok) {
+        console.log('SMS sent successfully!');
+      } else {
+        console.error('Error sending SMS:', await response.text());
+        // Handle errors appropriately, e.g., display an error message to the user
+      }
+    } catch (error) {
+      console.error('Error fetching external API:', error);
+      // Handle errors appropriately, e.g., display an error message to the user
+    }
+
+            return ctx.send({
+                phone_number:ctx.request.body.phone_number,
+                verify_code:code,
+              });
+}
+
+plugin.routes['content-api'].routes.push(
+    {
+        method: "POST",
+        path: "/user/verify",
+        handler: "user.verify",
         config: {
             prefix: "",
             policies: []

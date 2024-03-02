@@ -109,7 +109,7 @@ module.exports = ({ env }) => ({
 });
 
 
-// for localhost comment above and uncomment bellow codes
+//for localhost comment above and uncomment bellow codes
 // const path = require('path');
 
 // module.exports = ({ env }) => {
