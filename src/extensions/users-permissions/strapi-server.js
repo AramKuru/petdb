@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 const crypto = require('crypto');
 const axios = require("axios");
 
@@ -37,7 +37,7 @@ const axios = require("axios");
 // }
 
 
-  module.exports = (plugin,env) => {
+  module.exports = (plugin,fetch) => {
   plugin.controllers.user.updateMe = async (ctx) => {
       if (!ctx.state.user || !ctx.state.user.id) {
           return ctx.response.status = 401;
