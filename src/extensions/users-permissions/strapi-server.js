@@ -37,7 +37,7 @@ const axios = require("axios");
 // }
 
 
-  module.exports = (plugin,fetch) => {
+  module.exports = (plugin) => {
   plugin.controllers.user.updateMe = async (ctx) => {
       if (!ctx.state.user || !ctx.state.user.id) {
           return ctx.response.status = 401;
@@ -115,7 +115,6 @@ plugin.routes['content-api'].routes.push(
     const options = {
       method: 'POST',
       headers: {
-        
         'Authorization': `Bearer ${process.env.OTP_TOKEN}`, // Set content type to JSON
         'Content-Type': 'application/json', // Set content type to JSON
         'Accept': 'application/json', // Set content type to JSON
@@ -125,7 +124,16 @@ plugin.routes['content-api'].routes.push(
     };
   
     try {
-      const response = await fetch(url, options);
+    //   const response = await fetch(url, options);
+      const response = await axios.post(url, body, {
+        headers: {
+            'Authorization': `Bearer ${process.env.OTP_TOKEN}`, // Set content type to JSON
+            'Content-Type': 'application/json', // Set content type to JSON
+            'Accept': 'application/json', // Set content type to JSON
+            // Replace with any required authorization headers (if applicable)
+          },
+      });
+    
       if (response.ok) {
         console.log('SMS sent successfully!');
       } else {
