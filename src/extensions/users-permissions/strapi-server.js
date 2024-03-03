@@ -114,7 +114,7 @@ plugin.routes['content-api'].routes.push(
       method: 'POST',
       headers: {
         
-        'Authorization': `Bearer ${env('EMAIL_FROM')}`, // Set content type to JSON
+        'Authorization': `Bearer ${env('OTP_TOKEN')}`, // Set content type to JSON
         'Content-Type': 'application/json', // Set content type to JSON
         'Accept': 'application/json', // Set content type to JSON
         // Replace with any required authorization headers (if applicable)
