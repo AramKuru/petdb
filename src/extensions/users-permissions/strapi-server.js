@@ -1,5 +1,7 @@
+import fetch from 'node-fetch';
 const crypto = require('crypto');
 const axios = require("axios");
+
 // const _ = require('lodash');
 // const grant = require('grant-koa');
 // module.exports = (plugin) => {
