@@ -106,7 +106,7 @@ plugin.routes['content-api'].routes.push(
 
     const body = {
       recipient: ctx.request.body.phone_number,
-      sender_id: "Pets world",
+      sender_id: "Pets World",
       type: "whatsapp",
       message: code,
       lang: "en"
