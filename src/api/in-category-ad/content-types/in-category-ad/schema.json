@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "in_category_ads",
+  "info": {
+    "singularName": "in-category-ad",
+    "pluralName": "in-category-ads",
+    "displayName": "in_category_ad"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main": {
+      "type": "string",
+      "required": true
+    },
+    "secondary": {
+      "type": "text",
+      "required": true
+    },
+    "pic": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "main_arabic": {
+      "type": "string"
+    },
+    "main_turkish": {
+      "type": "string"
+    },
+    "main_kurdish": {
+      "type": "string"
+    },
+    "secondary_arabic": {
+      "type": "text"
+    },
+    "secondary_turkish": {
+      "type": "text"
+    },
+    "secondary_kurdish": {
+      "type": "text"
+    },
+    "animal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::animal.animal",
+      "inversedBy": "in_category_ad"
+    },
+    "btn_english": {
+      "type": "string",
+      "required": true
+    },
+    "btn_turkish": {
+      "type": "string"
+    },
+    "btn_arabic": {
+      "type": "string"
+    },
+    "btn_kurdish": {
+      "type": "string"
+    },
+    "filter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::filter.filter",
+      "inversedBy": "in_category_ads"
+    }
+  }
+}

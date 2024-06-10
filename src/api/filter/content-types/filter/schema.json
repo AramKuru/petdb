@@ -37,6 +37,12 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "in_category_ads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::in-category-ad.in-category-ad",
+      "mappedBy": "filter"
     }
   }
 }

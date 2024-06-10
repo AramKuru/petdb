@@ -54,6 +54,12 @@
     },
     "color": {
       "type": "string"
+    },
+    "in_category_ad": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::in-category-ad.in-category-ad",
+      "mappedBy": "animal"
     }
   }
 }

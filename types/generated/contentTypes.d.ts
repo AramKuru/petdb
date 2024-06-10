@@ -737,6 +737,11 @@ export interface ApiAnimalAnimal extends Schema.CollectionType {
         min: 0;
       }>;
     color: Attribute.String;
+    in_category_ad: Attribute.Relation<
+      'api::animal.animal',
+      'oneToOne',
+      'api::in-category-ad.in-category-ad'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1012,6 +1017,11 @@ export interface ApiFilterFilter extends Schema.CollectionType {
       Attribute.Unique &
       Attribute.DefaultTo<0>;
     name: Attribute.String & Attribute.Required;
+    in_category_ads: Attribute.Relation<
+      'api::filter.filter',
+      'oneToMany',
+      'api::in-category-ad.in-category-ad'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1022,6 +1032,57 @@ export interface ApiFilterFilter extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::filter.filter',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiInCategoryAdInCategoryAd extends Schema.CollectionType {
+  collectionName: 'in_category_ads';
+  info: {
+    singularName: 'in-category-ad';
+    pluralName: 'in-category-ads';
+    displayName: 'in_category_ad';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    main: Attribute.String & Attribute.Required;
+    secondary: Attribute.Text & Attribute.Required;
+    pic: Attribute.Media & Attribute.Required;
+    main_arabic: Attribute.String;
+    main_turkish: Attribute.String;
+    main_kurdish: Attribute.String;
+    secondary_arabic: Attribute.Text;
+    secondary_turkish: Attribute.Text;
+    secondary_kurdish: Attribute.Text;
+    animal: Attribute.Relation<
+      'api::in-category-ad.in-category-ad',
+      'oneToOne',
+      'api::animal.animal'
+    >;
+    btn_english: Attribute.String & Attribute.Required;
+    btn_turkish: Attribute.String;
+    btn_arabic: Attribute.String;
+    btn_kurdish: Attribute.String;
+    filter: Attribute.Relation<
+      'api::in-category-ad.in-category-ad',
+      'manyToOne',
+      'api::filter.filter'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::in-category-ad.in-category-ad',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::in-category-ad.in-category-ad',
       'oneToOne',
       'admin::user'
     > &
@@ -1410,6 +1471,7 @@ declare module '@strapi/types' {
       'api::doctor.doctor': ApiDoctorDoctor;
       'api::feedback.feedback': ApiFeedbackFeedback;
       'api::filter.filter': ApiFilterFilter;
+      'api::in-category-ad.in-category-ad': ApiInCategoryAdInCategoryAd;
       'api::order-detail.order-detail': ApiOrderDetailOrderDetail;
       'api::order-item.order-item': ApiOrderItemOrderItem;
       'api::product.product': ApiProductProduct;
