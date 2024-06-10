@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-06-10T07:44:38.416Z"
+    "x-generation-date": "2024-06-10T08:16:01.226Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1641,6 +1641,9 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "active": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -4958,6 +4961,9 @@
                                                                                             }
                                                                                           }
                                                                                         },
+                                                                                        "active": {
+                                                                                          "type": "boolean"
+                                                                                        },
                                                                                         "createdAt": {
                                                                                           "type": "string",
                                                                                           "format": "date-time"
@@ -8047,6 +8053,9 @@
                                                                                   }
                                                                                 }
                                                                               }
+                                                                            },
+                                                                            "active": {
+                                                                              "type": "boolean"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -11480,6 +11489,9 @@
                                                                     }
                                                                   }
                                                                 }
+                                                              },
+                                                              "active": {
+                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
@@ -15607,6 +15619,9 @@
                                                                                               }
                                                                                             }
                                                                                           }
+                                                                                        },
+                                                                                        "active": {
+                                                                                          "type": "boolean"
                                                                                         },
                                                                                         "createdAt": {
                                                                                           "type": "string",
@@ -20154,6 +20169,9 @@
                             }
                           }
                         },
+                        "active": {
+                          "type": "boolean"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -20280,7 +20298,8 @@
               "main",
               "secondary",
               "pic",
-              "btn_english"
+              "btn_english",
+              "active"
             ],
             "type": "object",
             "properties": {
@@ -20352,6 +20371,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "active": {
+                "type": "boolean"
               }
             }
           }
@@ -20409,7 +20431,8 @@
           "main",
           "secondary",
           "pic",
-          "btn_english"
+          "btn_english",
+          "active"
         ],
         "properties": {
           "main": {
@@ -21922,6 +21945,9 @@
                                                                                   }
                                                                                 }
                                                                               }
+                                                                            },
+                                                                            "active": {
+                                                                              "type": "boolean"
                                                                             },
                                                                             "createdAt": {
                                                                               "type": "string",
@@ -23494,6 +23520,9 @@
                 }
               }
             }
+          },
+          "active": {
+            "type": "boolean"
           },
           "createdAt": {
             "type": "string",
@@ -25192,6 +25221,9 @@
                                                                                               }
                                                                                             }
                                                                                           }
+                                                                                        },
+                                                                                        "active": {
+                                                                                          "type": "boolean"
                                                                                         },
                                                                                         "createdAt": {
                                                                                           "type": "string",
@@ -28077,6 +28109,9 @@
                                                                   }
                                                                 }
                                                               }
+                                                            },
+                                                            "active": {
+                                                              "type": "boolean"
                                                             },
                                                             "createdAt": {
                                                               "type": "string",
@@ -31248,6 +31283,9 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "active": {
+                                                  "type": "boolean"
                                                 },
                                                 "createdAt": {
                                                   "type": "string",
@@ -34567,6 +34605,9 @@
                                                                   }
                                                                 }
                                                               }
+                                                            },
+                                                            "active": {
+                                                              "type": "boolean"
                                                             },
                                                             "createdAt": {
                                                               "type": "string",
@@ -38258,6 +38299,9 @@
                                                                                                           }
                                                                                                         }
                                                                                                       }
+                                                                                                    },
+                                                                                                    "active": {
+                                                                                                      "type": "boolean"
                                                                                                     },
                                                                                                     "createdAt": {
                                                                                                       "type": "string",
@@ -42308,6 +42352,9 @@
                                                                     }
                                                                   }
                                                                 }
+                                                              },
+                                                              "active": {
+                                                                "type": "boolean"
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",

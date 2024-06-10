@@ -1045,6 +1045,7 @@ export interface ApiInCategoryAdInCategoryAd extends Schema.CollectionType {
     singularName: 'in-category-ad';
     pluralName: 'in-category-ads';
     displayName: 'in_category_ad';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -1073,6 +1074,7 @@ export interface ApiInCategoryAdInCategoryAd extends Schema.CollectionType {
       'manyToOne',
       'api::filter.filter'
     >;
+    active: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
