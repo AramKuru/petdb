@@ -98,15 +98,15 @@
     },
     "fullName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "addressName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "addressType": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "floorNumber": {
       "type": "string"

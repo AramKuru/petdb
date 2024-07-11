@@ -677,9 +677,9 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     latitude: Attribute.Float;
     longitude: Attribute.Float;
     admin_picture: Attribute.Media;
-    fullName: Attribute.String & Attribute.Required;
-    addressName: Attribute.String & Attribute.Required;
-    addressType: Attribute.String & Attribute.Required;
+    fullName: Attribute.String;
+    addressName: Attribute.String;
+    addressType: Attribute.String;
     floorNumber: Attribute.String;
     flatNumber: Attribute.String;
     fullAddress: Attribute.String;
