@@ -15,7 +15,6 @@
     "percent": {
       "type": "integer",
       "required": true,
-      "max": 100,
       "min": 0
     },
     "valid_until": {

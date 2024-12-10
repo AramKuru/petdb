@@ -891,7 +891,6 @@ export interface ApiDiscountDiscount extends Schema.CollectionType {
       Attribute.Required &
       Attribute.SetMinMax<{
         min: 0;
-        max: 100;
       }>;
     valid_until: Attribute.DateTime & Attribute.Required;
     products: Attribute.Relation<
