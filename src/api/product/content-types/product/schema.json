@@ -31,8 +31,9 @@
     },
     "filter": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::filter.filter"
+      "relation": "manyToOne",
+      "target": "api::filter.filter",
+      "inversedBy": "products"
     },
     "name_sorani": {
       "type": "string",
@@ -124,12 +125,6 @@
       "relation": "oneToOne",
       "target": "api::productsort.productsort",
       "mappedBy": "product"
-    },
-    "filter_brand": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::filter.filter",
-      "inversedBy": "products"
     }
   }
 }

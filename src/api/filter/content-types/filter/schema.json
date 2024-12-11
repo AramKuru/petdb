@@ -48,7 +48,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "filter_brand"
+      "mappedBy": "filter"
     }
   }
 }

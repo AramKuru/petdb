@@ -1220,7 +1220,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     >;
     filter: Attribute.Relation<
       'api::product.product',
-      'oneToOne',
+      'manyToOne',
       'api::filter.filter'
     >;
     name_sorani: Attribute.String & Attribute.DefaultTo<'name_turkish'>;
@@ -1258,11 +1258,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::product.product',
       'oneToOne',
       'api::productsort.productsort'
-    >;
-    filter_brand: Attribute.Relation<
-      'api::product.product',
-      'manyToOne',
-      'api::filter.filter'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
