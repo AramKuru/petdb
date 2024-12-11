@@ -43,6 +43,12 @@
       "relation": "oneToMany",
       "target": "api::in-category-ad.in-category-ad",
       "mappedBy": "filter"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "filter_brand"
     }
   }
 }

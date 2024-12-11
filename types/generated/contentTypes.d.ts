@@ -1021,6 +1021,11 @@ export interface ApiFilterFilter extends Schema.CollectionType {
       'oneToMany',
       'api::in-category-ad.in-category-ad'
     >;
+    products: Attribute.Relation<
+      'api::filter.filter',
+      'oneToMany',
+      'api::product.product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1253,6 +1258,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::product.product',
       'oneToOne',
       'api::productsort.productsort'
+    >;
+    filter_brand: Attribute.Relation<
+      'api::product.product',
+      'manyToOne',
+      'api::filter.filter'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
