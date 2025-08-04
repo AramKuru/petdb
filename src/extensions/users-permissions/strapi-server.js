@@ -39,6 +39,10 @@ const axios = require("axios");
 
   module.exports = (plugin) => {
   plugin.controllers.user.updateMe = async (ctx) => {
+    console.log("updateMe ctx:", ctx);
+    console.log("updateMe ctx.state:", ctx.state);
+    console.log("updateMe ctx.state.user:", ctx.state.user);
+    
       if (!ctx.state.user || !ctx.state.user.id) {
           return ctx.response.status = 401;
       }
